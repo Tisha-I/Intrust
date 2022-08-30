@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="idcardform.css">
+    <script src="https://kit.fontawesome.com/0457335a94.js" crossorigin="anonymous"></script>
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Open+Sans'>
+</head>
+<body>
+    <div class="idcardhero">
+        <div class="idcardnav">
+            <div class="idcardnavlogo">
+                <img src="images/logo.svg" alt="">
+            </div>
+            <nav class="idcardNav__Items">
+                <!-- <div class="idcardNav__Link">
+                    <a href="">
+                        <button class="idcardnavbtn1"><i class="fa-solid fa-list-ul"></i> NIN PRE-ENROLLMENT</button>
+                    </a>
+                </div> -->
+                <div class="idcardNav__Linkitems">
+                    <div class="idcardNav__Link">
+                        <a href="">Home</a>
+                    </div>
+                    <div class="idcardNav__Link">
+                        <a href="">Our Process</a>
+                    </div>
+                    <div class="idcardNav__Link">
+                        <a href="">Contact</a>
+                    </div>
+                    <!-- <div class="idcardNav__Link">
+                        <a href="">Login</a>
+                    </div>
+                </div>
+                <div class="idcardNav__Link">
+                    <a href="">
+                        <button class="idcardnavbtn2"><i class="fa-regular fa-user"></i> Sign Up</button>
+                    </a>
+                </div> -->
+            </nav>
+            <div class="Navbar__Link Navbar__Link-toggle">
+                <div class="toggleicon">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </div>
+        <script>
+            function classToggle() {
+                const navs = document.querySelectorAll('.idcardNav__Items')
+                navs.forEach(nav => nav.classList.toggle('Navbar__ToggleShow'));
+            }
+            document.querySelector('.Navbar__Link-toggle')
+            .addEventListener('click', classToggle);
+        </script>
+        <div class="idcardform">
+            <div class="idcardformh1">
+                <h1>Requisition Form</h1>
+            </div>
+            <form action="" class="idcardformform">
+                <div class="idcardNOO">
+                    <label for="NOO">Name Of Organisation</label> <br>
+                    <input type="text" placeholder="&nbsp;&nbsp;&nbsp;&nbsp; Enter The Name Of Your Organisation" required>
+                </div>
+                <div class="input-icons">
+                    <div class="idformemailandphoneno">
+                        <div class="idformemail">
+                            <label for="idemail">Email</label> <br>
+                            <input type="email" name="email" id="email" placeholder="&nbsp;&nbsp;&nbsp;&nbsp; Enter Company Email" required>
+                        </div>
+                        <div class="idformphoneno">
+                            <label for="phoneno">Phone Number</label> <br>
+                            <input type="tel" placeholder="&nbsp;&nbsp;&nbsp;&nbsp; Enter Company Number" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="idformaddress">
+                    <label for="Address">Address</label> <br>
+                    <input type="text" placeholder="&nbsp;&nbsp;&nbsp;&nbsp; Enter The Address Of Your Organisation" required>
+                </div>
+                <div class="quantityofcards">
+                    <div class="QOCh1">
+                        <label for="QOCs">Quantity Of Cards</label>
+                    </div>
+                    <div class="QOCs">
+                        <label class="QOCcontainer">
+                            <div class="QOCsInput">
+                                <div class="QOCInput">
+                                    <input type="radio" checked="checked" name="radio">
+                                    <span class="checkmark"></span>
+                                </div> <br>
+                                <div class="QOCps">
+                                    <p>1-10</p>
+                                </div>
+                            </div>
+                        </label>
+                        <label class="QOCcontainer">
+                            <div class="QOCsInput">
+                                <div class="QOCInput">
+                                    <input type="radio" name="radio">
+                                    <span class="checkmark"></span>
+                                </div> <br>
+                                <div class="QOCps">
+                                    <p>10-50</p>
+                                </div>
+                            </div>
+                        </label>
+                        <label class="QOCcontainer">
+                            <div class="QOCsInput">
+                                <div class="QOCInput">
+                                    <input type="radio" name="radio">
+                                    <span class="checkmark"></span>
+                                </div> <br>
+                                <div class="QOCps">
+                                    <p>50-200</p>
+                                </div>
+                            </div>
+                        </label>
+                        <label class="QOCcontainer">
+                            <div class="QOCsInput">
+                                <div class="QOCInput">
+                                    <input type="radio" name="radio">
+                                    <span class="checkmark"></span>
+                                </div> <br>
+                                <div class="QOCps">
+                                    <p>200+</p>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                <div class="carddesign">
+                    <div class="carddesignselct">
+                        <label for="carddesign">Card Design</label><br>
+                        <div class="carddesignselect1">
+                            <select id="try" aria-placeholder="" required>
+                                <option selected disabled hidden>Select How You Want Your Card Designed</option>
+                                <option value="1" >Pick From A Template</option>
+                                <option value="2">Custom Design</option>
+                            </select>
+                        </div>
+
+                    </div>
+                    <div class="scrollmenudiv" id="image">
+                        <div class="scrollmenu">
+                            <button>
+                                <img src="images/template2.svg" alt="">
+                            </button>
+                            <button>
+                                <img src="images/template3.svg" alt="">
+                            </button>
+                            <button>
+                                <img src="images/template4.svg" alt="">
+                            </button>
+                            <button>
+                                <img src="images/template5.svg" alt="">
+                            </button>
+                            <button>
+                                <img src="images/template2.svg" alt="">
+                            </button>
+                            <button>
+                                <img src="images/template3.svg" alt="">
+                            </button>
+                            <button>
+                                <img src="images/template4.svg" alt="">
+                            </button>
+                            <button>
+                                <img src="images/template5.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                    <div class="leg">
+                        <label for="fileinput">Upload Image</label>
+                        <input class="fileinput" type="file">
+                    </div>
+                    <div class="formcheckbox">
+                        <h1>Card Info</h1>
+                        <div class="checkboxitems">
+                            <div class="checkboxitemsi">
+                                <input type="checkbox">
+                                <label for="item">Item 1</label>
+                            </div>
+                            <div class="checkboxitemsi">
+                                <input type="checkbox">
+                                <label for="item">Item 2</label>
+                            </div>
+                            <div class="checkboxitemsi">
+                                <input type="checkbox">
+                                <label for="item">Item 3</label>
+                            </div>
+                            <div class="checkboxitemsi">
+                                <input type="checkbox">
+                                <label for="item">Item 4</label>
+                            </div>
+                        </div>
+                        <div class="checkboxitems">
+                            <div class="checkboxitemsi">
+                                <input type="checkbox">
+                                <label for="item">Item 5</label>
+                            </div>
+                            <div class="checkboxitemsi">
+                                <input type="checkbox">
+                                <label for="item">Item 6</label>
+                            </div>
+                            <div class="checkboxitemsi">
+                                <input type="checkbox">
+                                <label for="item">Item 7</label>
+                            </div>
+                            <div class="checkboxitemsi">
+                                <input type="checkbox">
+                                <label for="item">Item 8</label>
+                            </div>
+                        </div> 
+                    </div>
+
+                <div class="placerequestbtn">
+                    <button>PLACE REQUEST</button>
+                </div>
+            </form>
+        </div>
+    </div>
+                    
+    <script>
+        const btn = document.querySelector('#btn');
+        const sb = document.querySelector('#try');
+
+        sb.addEventListener('change', () => {
+            const image = document.querySelector('#image');
+            const leg = document.querySelector('.leg');
+            
+            if(sb.selectedIndex === 2) {
+                image.style.display = 'none';
+                leg.style.display = 'block';
+            } else {
+                image.style.display = 'flex';
+                leg.style.display = 'none';
+            }
+        })
+    </script>
+</body>
+</html>

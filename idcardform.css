@@ -1,0 +1,383 @@
+*{
+    padding: 0;
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    background-color: #F5F5F5;
+}
+/* @import url('https://fonts.googleapis.com/css?family=Open+Sans'); */
+.idcardhero {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.idcardNav__Items {
+    display: flex;
+    flex-direction: row;
+    font-family: Poppins;
+    padding-top: 1%;
+}
+.idcardnav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 3%;
+}
+.idcardNav__Link {
+    padding-left: 30px;
+}
+.idcardNav__Link a {
+    text-decoration: none;
+    color: #5CB85C;
+}
+.idcardnavbtn2 {
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #FFBF30;
+    padding: 12px 30px;
+    border-radius: 10px;
+    border: none
+}
+.idcardnavbtn2 i {
+    background-color: #FFBF30;
+    color: #FFFFFF;
+}
+.idcardnavbtn1{
+    background-color: #5CB85C;
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 12px 30px;
+    border-radius: 10px;
+    border: none;
+}
+.idcardnavbtn1 i {
+    background-color: #5CB85C;
+    color: #F5F5F5;
+} 
+.idcardNav__Linkitems {
+    display: flex;
+    flex-direction: row;
+    padding-top: 1%;
+}
+.idcardformh1 h1{
+    font-family: Poppins;
+    font-weight: bolder;
+    font-size: 46px;
+    color: #333333;
+}
+.input-icons i {
+    position: absolute;
+}
+  
+.input-icons {
+    width: 100%;
+    margin-bottom: 10px;
+}
+  
+.icon {
+    padding: 10px;
+    min-width: 40px;
+}
+  
+.input-field {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+.idcardform {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
+}
+.idcardNOO {
+    font-family: Open Sans;
+    padding-bottom: 30px;
+}
+.idcardNOO input{
+    padding: 15px 0px;
+    width: 100%;
+    border-radius: 12px;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    border: 1px solid rgba(27, 28, 30, 0.25);
+}
+.idcardNOO label{
+    font-size: 14px;
+    font-family: Open Sans;
+    font-weight: bold;
+}
+.idformemailandphoneno {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.idformemailandphoneno input {
+    padding: 15px 0px;
+    width: 100%;
+    border-radius: 12px;
+    border: 1px solid rgba(27, 28, 30, 0.25);
+}
+.idformemailandphoneno label {
+    font-family: 'Open Sans';
+    font-size: 14px;
+    font-weight: bold;
+}
+.idformemail{
+    width: 48%;
+}
+.idformphoneno {
+    width: 48%;
+}
+.idformaddress {
+    padding-top: 30px;
+}
+.idformaddress label {
+    font-family: 'Open Sans';
+    font-size: 14px;
+    font-weight: bold;
+}
+.idformaddress input {
+    width: 100%;
+    padding: 15px 0px;
+    border-radius: 12px;
+    border: 1px solid rgba(27, 28, 30, 0.25);
+}
+.quantityofcards {
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    width: 50%;
+}
+.QOCs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.QOCs label {
+    font-family: Inter;
+}
+.QOCs input {
+    color: #5CB85C;
+}
+.QOC {
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.QOCh1 {
+    font-family: 'Open Sans';
+    padding-bottom: 15px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.carddesign {
+    padding-top: 30px;
+}
+.carddesign select {
+    width: 100%;
+    border-radius: 12px;
+    font-family: Open Sans;
+    background: #F5F5F5;
+    color: #333333;
+    border: 1px solid rgba(27, 28, 30, 0.25);
+    padding: 15px;
+    border-radius: 10px;
+}
+.QOCsInput {
+    display: flex;
+    flex-direction: column;
+}
+.QOCcontainer {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    cursor: pointer;
+    font-size: 14px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  .QOCcontainer input {
+    opacity: 0;
+    cursor: pointer;
+    border: 1px solid rgba(27, 28, 30, 0.25);
+  }
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #5CB85C;
+    border-radius: 50%;
+  }
+  .QOCcontainer:hover input ~ .checkmark {
+    background-color: #5CB85C;
+    opacity: 1;
+  }
+  .QOCcontainer input:checked ~ .checkmark {
+    background-color: #FFFFFF;
+  }
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  .QOCcontainer input:checked ~ .checkmark:after {
+    display: block;
+  }
+  .QOCcontainer .checkmark:after {
+       top: 9px;
+      left: 9px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #5CB85C;
+  }
+  .Navbar__Link-toggle {
+    display: none;
+  }
+  .carddesignselect {
+    padding-bottom: 30px;
+  }
+  .scrollmenu {
+    background-color: #F2F2F2;
+    overflow: auto;
+    white-space: nowrap;
+    overflow-y: hidden;
+  }
+  .scrollmenudiv {
+    border: 1px solid rgba(27, 28, 30, 0.25);
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .scrollmenu button {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    border: none;
+  }
+  
+  .scrollmenu button:hover {
+    background-color: #F2F2F2;
+    transition: all 0.3s ease;
+    transform: scale(1.1);
+  }
+  .carddesignselct {
+    padding-bottom: 30px;
+    color: #333333;
+  }
+  .placerequestbtn {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+.placerequestbtn button {
+    width: 100%;
+    background-color: #FFBF30;
+    padding: 15px 0px;
+    border-radius: 12px;
+    border: none;
+    color: #FFFFFF;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    font-weight: bold;
+}
+.placerequestbtn button:hover {
+    cursor: pointer;
+}
+.fileinput {
+    padding: 15px 0px;
+    /* background-color: green; */
+    width: 100%;
+    cursor: pointer;
+    border: 1px solid rgba(27, 28, 30, 0.25);
+    border-radius: 12px;
+}
+.leg {
+    display: none;
+    width: 100%;
+}
+.leg label {
+    font-size: 14px;
+    font-family: 'Open Sans';
+    font-weight: bold;
+}
+.carddesignselct label {
+    color: #333333;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: Open Sans;
+}
+.formcheckbox {
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+}
+.formcheckbox h1 {
+    font-family: 'Open Sans';
+    font-size: 30px;
+    color: #333333;
+}
+.checkboxitems {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 20px;
+    font-family: Poppins;
+    font-size: 16px;
+}
+  @media only screen and (max-width: 768px) {
+    .idcardNav__Linkitems {
+        flex-direction: column;
+    }
+
+    .idcardnav {
+        flex-direction: column;
+    }
+    .idcardNav__Items {
+        flex-direction: column;
+    }
+    .idcardNav__Link a {
+        color: #333333;
+        text-decoration: none;
+        float: right;
+    }
+/* 
+    .Navbar__Link-active a {
+        padding-left: 13%;
+    } */
+
+    .idcardNav__Items {
+        display: none;
+        color: #F2F2F2;
+    }
+/* 
+    .Navbar__Items--right {
+        margin-left: 0;
+    } */
+
+    .Navbar__ToggleShow {
+        display: flex;
+        align-self: flex-end;
+    }
+
+    .Navbar__Link-toggle {
+        padding-top: 15px;
+        align-self: flex-end;
+        display: initial;
+        position: absolute;
+        cursor: pointer;
+    }
+    .toggleicon i {
+        color: #5CB85C;
+        width: 30px;
+        height: 30px;
+    }
+  }

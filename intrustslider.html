@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="intrustslider.css">
+</head>
+<body>
+    <header>
+        <div class="idcardnav">
+            <div class="idcardnavlogo">
+                <img src="images/logo.svg" alt="">
+            </div>
+            <nav class="idcardNav__Items">
+                <div class="idcardNav__Link">
+                    <a href="">
+                        <button class="idcardnavbtn1"><i class="fa-solid fa-list-ul"></i> NIN PRE-ENROLLMENT</button>
+                    </a>
+                </div>
+                <div class="idcardNav__Linkitems">
+                    <div class="idcardNav__Link">
+                        <a href="">Home</a>
+                    </div>
+                    <div class="idcardNav__Link">
+                        <a href="">About Intrust</a>
+                    </div>
+                    <div class="idcardNav__Link">
+                        <a href="">Contact</a>
+                    </div>
+                    <div class="idcardNav__Link">
+                        <a href="">Login</a>
+                    </div>
+                </div>
+                <div class="idcardNav__Link">
+                    <a href="">
+                        <button class="idcardnavbtn2"><i class="fa-regular fa-user"></i> Sign Up</button>
+                    </a>
+                </div>
+            </nav>
+            <div class="Navbar__Link Navbar__Link-toggle">
+                <div class="toggleicon">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </div>
+        <script>
+            function classToggle() {
+                const navs = document.querySelectorAll('.idcardNav__Items')
+                navs.forEach(nav => nav.classList.toggle('Navbar__ToggleShow'));
+            }
+            document.querySelector('.Navbar__Link-toggle')
+            .addEventListener('click', classToggle);
+        </script>
+    </header>
+    <div class="hero">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="slider1">
+                    <div class="home1">
+                        <h1></h1>
+                        <p>With our all-in-one campaign management system that <br> provides services to help boost your race </p>
+                        <div class="home1buttons">
+                            <a href=""><button class="button1"> BOOK A DEMO</button></a>
+                            <a href=""><button class="button2">HOW IT WORKS</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mySlides fade">
+                <div class="slider2">
+                    <div class="home1">
+                        <h1></h1>
+                        <p>Engage more supporters by optimizing and personalizing<br> your communication across multiple channels</p>
+                        <div class="home1buttons">
+                            <a href=""><button class="button1"> BOOK A DEMO</button></a>
+                            <a href=""><button class="button2">HOW IT WORKS</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
