@@ -208,9 +208,9 @@
     position: absolute;
     top: 0;
     left: 0;
-    height: 25px;
-    width: 25px;
-    background-color: #5CB85C;
+    height: 16px;
+    width: 16px;
+    background-color: rgba(92, 184, 92, 0.4);
     border-radius: 50%;
   }
   .QOCcontainer:hover input ~ .checkmark {
@@ -218,7 +218,7 @@
     opacity: 1;
   }
   .QOCcontainer input:checked ~ .checkmark {
-    background-color: #FFFFFF;
+    background-color: rgba(92, 184, 92, 0.4);
   }
   .checkmark:after {
     content: "";
@@ -229,12 +229,12 @@
     display: block;
   }
   .QOCcontainer .checkmark:after {
-       top: 9px;
-      left: 9px;
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background: #5CB85C;
+    top: 4px;
+    left: 4px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #5CB85C;
   }
   .Navbar__Link-toggle {
     display: none;
