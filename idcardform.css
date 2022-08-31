@@ -65,6 +65,10 @@
     font-size: 46px;
     color: #333333;
 }
+.idcardnavlogo img {
+    width:  150px;
+    height: 90px;
+}
 .input-icons i {
     position: absolute;
 }
@@ -256,7 +260,7 @@
     padding-left: 10px;
     padding-right: 10px;
   }
-  .scrollmenu button {
+  .scrollmenuoption {
     display: inline-block;
     color: white;
     text-align: center;
@@ -265,7 +269,7 @@
     border: none;
   }
   
-  .scrollmenu button:hover {
+  .scrollmenuoption:hover {
     background-color: #F2F2F2;
     transition: all 0.3s ease;
     transform: scale(1.1);
@@ -324,14 +328,37 @@
     font-family: 'Open Sans';
     font-size: 30px;
     color: #333333;
+    margin-bottom: 0;
+}
+.checkboxitems h2 {
+    font-family: Poppins;
+    margin-bottom: 0;
 }
 .checkboxitems {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
     padding-top: 20px;
     font-family: Poppins;
     font-size: 16px;
+}
+.checkboxitemsii {
+    display: flex;
+    flex-direction: row;
+}
+/* .checkboxitemsii input {
+} */
+.checkboxitems1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.checkboxothers input {
+    padding: 12px 0px;
+    border-radius: 10px;
+    border: none;
+    border: 1px solid #333333;
+    font-family: Poppins;
 }
   @media only screen and (max-width: 768px) {
     .idcardNav__Linkitems {

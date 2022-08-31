@@ -51,6 +51,14 @@
     border: none;
     cursor: pointer;
 }
+.idcardNav__Link a:hover {
+    cursor: pointer;
+    text-decoration: 2px solid underline #5CB85C;
+}
+.idcardnavlogo img {
+    width:  150px;
+    height: 90px;
+}
 .idcardnavbtn1 i {
     background-color: #5CB85C;
     color: #F5F5F5;
@@ -62,6 +70,35 @@
 }
 .Navbar__Link-toggle {
     display: none;
+}
+.dropdown {
+    position: relative;
+    display: flex;
+  }
+  
+.dropdown-content {
+    display: none;
+    position: relative;
+    min-width: 160px;
+    overflow: auto;
+}
+  
+.dropdown-content a {
+    color: #5CB85C;
+    padding: 12px 0px;
+    text-decoration: none;
+    font-family: Poppins;
+    display: block;
+}
+  
+.dropdown a:hover {
+    background-color: rgba(92, 184, 92, 0.5);    
+    cursor: pointer;
+    text-decoration: none;
+}
+.show {
+    display: flex;
+    flex-direction: column;
 }
 .FAQhome1 {
     padding-top: 5%;

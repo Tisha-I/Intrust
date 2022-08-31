@@ -16,23 +16,33 @@
     <header>
         <div class="idcardnav">
             <div class="idcardnavlogo">
-                <img src="images/logo.svg" alt="">
+                <img src="/images/intrust_logo.png" alt="">
             </div>
             <nav class="idcardNav__Items">
-                <div class="idcardNav__Link">
+                <!-- <div class="idcardNav__Link">
                     <a href="">
                         <button class="idcardnavbtn1"><i class="fa-solid fa-list-ul"></i> NIN PRE-ENROLLMENT</button>
                     </a>
-                </div>
+                </div> -->
                 <div class="idcardNav__Linkitems">
                     <div class="idcardNav__Link">
                         <a href="">Home</a>
                     </div>
                     <div class="idcardNav__Link">
+                        <a onclick="myFunction()" class="dropbtn">Services <i class="fa-solid fa-caret-down"></i></a>
+                        <div class="dropdown">
+                            <div id="myDropdown" class="dropdown-content">
+                              <a href="#">Verification</a>
+                              <a href="#">ID Card Service</a>
+                              <a href="#">NIN Pre-Enrollment</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="idcardNav__Link">
                         <a href="">About Intrust</a>
                     </div>
                     <div class="idcardNav__Link">
-                        <a href="">Contact</a>
+                        <a href="">Contact Us</a>
                     </div>
                     <div class="idcardNav__Link">
                         <a href="">Login</a>
@@ -73,7 +83,8 @@
                         <img src="images/slider2.svg" alt="">
                     </div>
                     <div class="home1">
-                        <h1>On-Demand Id Card Design & Printing</h1>
+                        <h1>Get Your ID Card</h1>
+                        <h2>On-Demand Id Card Design & Printing</h2>
                         <p>Our streamlined ID Card generation process takes care of the hassle, leaving you and your workers with quality identification, delivered with ease.
                         </p>
                         <div class="slider1btn">
@@ -104,6 +115,21 @@
         if (slideIndex > slides.length) {slideIndex = 1}    
         slides[slideIndex-1].style.display = "block";  
         setTimeout(showSlides, 5000);
+        }
+        function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+        }
+        window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+            }
+        }
         }
     </script>
 </body>
