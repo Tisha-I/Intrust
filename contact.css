@@ -2,6 +2,61 @@
     padding-left: 5%;
     padding-right: 5%;
 }
+.idcardNav__Items {
+    display: flex;
+    flex-direction: row;
+    font-family: Poppins;
+    padding-top: 1%;
+}
+.idcardnav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 3%;
+}
+.idcardNav__Link {
+    padding-left: 30px;
+}
+.idcardNav__Link a {
+    text-decoration: none;
+    color: #5CB85C;
+}
+.idcardnavbtn2 {
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #FFBF30;
+    padding: 12px 30px;
+    border-radius: 10px;
+    border: none
+}
+.idcardnavbtn2 i {
+    background-color: #FFBF30;
+    color: #FFFFFF;
+}
+.idcardnavbtn1{
+    background-color: #5CB85C;
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 12px 30px;
+    border-radius: 10px;
+    border: none;
+}
+.Navbar__Link-toggle {
+    display: none;
+  }
+  .idcardnavlogo img {
+    width:  150px;
+    height: 90px;
+}
+.idcardnavbtn1 i {
+    background-color: #5CB85C;
+    color: #F5F5F5;
+} 
+.idcardNav__Linkitems {
+    display: flex;
+    flex-direction: row;
+    padding-top: 1%;
+}
 .firstcontainer {
     display: flex;
     flex-direction: row;

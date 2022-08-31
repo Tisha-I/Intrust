@@ -10,46 +10,43 @@
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <script src="https://kit.fontawesome.com/0457335a94.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-  </head>
 </head>
 <body>
     <div class="processesmain-container">
         <div class="processesnav">
-            <div class="idcardnavlogo">
-                <img src="images/logo.svg" alt="">
-            </div>
-            <nav class="idcardNav__Items">
-                <!-- <div class="idcardNav__Link">
-                    <a href="">
-                        <button class="idcardnavbtn1"><i class="fa-solid fa-list-ul"></i> NIN PRE-ENROLLMENT</button>
-                    </a>
-                </div> -->
-                <div class="idcardNav__Linkitems">
-                    <div class="idcardNav__Link">
-                        <a href="">Home</a>
-                    </div>
-                    <div class="idcardNav__Link">
-                        <a href="">Our Process</a>
-                    </div>
-                    <div class="idcardNav__Link">
-                        <a href="">Contact</a>
-                    </div>
-                    <!-- <div class="idcardNav__Link">
-                        <a href="">Login</a>
+            <div class="idcardnav">
+                <div class="idcardnavlogo">
+                    <img src="images/intrust_logo.png" alt="">
+                </div>
+                <nav class="idcardNav__Items">
+                    <div class="idcardNav__Linkitems">
+                        <div class="idcardNav__Link">
+                            <a href="">Home</a>
+                        </div>
+                        <div class="idcardNav__Link">
+                            <a href="">Our Process</a>
+                        </div>
+                        <div class="idcardNav__Link">
+                            <a href="">FAQs</a>
+                        </div>
+                        <div class="idcardNav__Link">
+                            <a href="">Contact Us</a>
+                        </div>
+                </nav>
+                <div class="Navbar__Link Navbar__Link-toggle">
+                    <div class="toggleicon">
+                        <i class="fa-solid fa-bars"></i>
                     </div>
                 </div>
-                <div class="idcardNav__Link">
-                    <a href="">
-                        <button class="idcardnavbtn2"><i class="fa-regular fa-user"></i> Sign Up</button>
-                    </a>
-                </div> -->
-            </nav>
-            <div class="Navbar__Link Navbar__Link-toggle">
-                <div class="toggleicon">
-                    <i class="fa-solid fa-bars"></i>
-                </div>
             </div>
-        </div>
+            <script>
+                function classToggle() {
+                    const navs = document.querySelectorAll('.idcardNav__Items')
+                    navs.forEach(nav => nav.classList.toggle('Navbar__ToggleShow'));
+                }
+                document.querySelector('.Navbar__Link-toggle')
+                .addEventListener('click', classToggle);
+            </script>
         <div class="firstcontainer">
             <div class="firstcontainer1">
                 <h1>On-Demand ID Card <br> Design & Printing</h1>
@@ -67,7 +64,7 @@
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat veritatis quis omnis iure illum inventore enim sed obcaecati, vitae sint tenetur incidunt voluptatem laboriosam eveniet vel reiciendis aut sunt aliquid.</p>
         </div>
         <div class="processimg">
-            <img src="/images/svg2.svg" alt="">
+            <img src="images/svg2.svg" alt="">
         </div>
         <div class="processform">
             <div class="processheading">
