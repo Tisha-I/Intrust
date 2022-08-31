@@ -51,6 +51,8 @@
             </div>
         </div>
         <script>
+
+
             function classToggle() {
                 const navs = document.querySelectorAll('.idcardNav__Items')
                 navs.forEach(nav => nav.classList.toggle('Navbar__ToggleShow'));
@@ -148,55 +150,58 @@
                     </div>
                     <div class="scrollmenudiv" id="image">
                         <div class="scrollmenu">
-                            <button>
+                            
+                            
+                            <button id="killbtn" >
                                 <img src="images/template2.svg" alt="">
                                 <div class="scrollmenuInput">
                                     <input type="radio" checked="checked1" name="radio1">
                                 </div>
                             </button>
-                            <button>
+                            <button id="killbtn">
                                 <img src="images/template3.svg" alt="">
                                 <div class="scrollmenuInput">
                                     <input type="radio" checked="checked1" name="radio1">
                                 </div>
                             </button>
-                            <button>
+                            <button id="killbtn">
                                 <img src="images/template4.svg" alt="">
                                 <div class="scrollmenuInput">
                                     <input type="radio" checked="checked1" name="radio1">
                                 </div>
                             </button>
-                            <button>
+                            <button id="killbtn">
                                 <img src="images/template5.svg" alt="">
                                 <div class="scrollmenuInput">
                                     <input type="radio" checked="checked1" name="radio1">
                                 </div>
                             </button>
-                            <button>
+                            <button id="killbtn">
                                 <img src="images/template2.svg" alt="">
                                 <div class="scrollmenuInput">
                                     <input type="radio" checked="checked1" name="radio1">
                                 </div>
                             </button>
-                            <button>
+                            <button id="killbtn">
                                 <img src="images/template3.svg" alt="">
                                 <div class="scrollmenuInput">
                                     <input type="radio" checked="checked1" name="radio1">
                                 </div>
                             </button>
-                            <button>
+                            <button id="killbtn">
                                 <img src="images/template4.svg" alt="">
                                 <div class="scrollmenuInput">
                                     <input type="radio" checked="checked1" name="radio1">
                                 </div>
                             </button>
-                            <button>
+                            <button id="killbtn">
                                 <img src="images/template5.svg" alt="">
                                 <div class="scrollmenuInput">
                                     <input type="radio" checked="checked1" name="radio1">
                                 </div>
                             </button>
                         </div>
+                      
                     </div>
                 </div>
                     <div class="leg">
@@ -251,6 +256,12 @@
     </div>
                     
     <script>
+const button = document.querySelector('killbtn');
+button.disabled = true;
+
+
+
+
         const btn = document.querySelector('#btn');
         const sb = document.querySelector('#try');
 
