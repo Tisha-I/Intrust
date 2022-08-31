@@ -16,23 +16,28 @@
     <div class="FAQmain">
         <div class="idcardnav">
             <div class="idcardnavlogo">
-                <img src="images/logo.svg" alt="">
+                <img src="/images/intrust_logo.png" alt="">
             </div>
             <nav class="idcardNav__Items">
-                <div class="idcardNav__Link">
-                    <a href="">
-                        <button class="idcardnavbtn1"><i class="fa-solid fa-list-ul"></i> NIN PRE-ENROLLMENT</button>
-                    </a>
-                </div>
                 <div class="idcardNav__Linkitems">
                     <div class="idcardNav__Link">
                         <a href="">Home</a>
                     </div>
                     <div class="idcardNav__Link">
+                        <a onclick="myFunction()" class="dropbtn">Services <i class="fa-solid fa-caret-down"></i></a>
+                        <div class="dropdown">
+                            <div id="myDropdown" class="dropdown-content">
+                              <a href="#">Verification</a>
+                              <a href="#">ID Card Service</a>
+                              <a href="#">NIN Pre-Enrollment</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="idcardNav__Link">
                         <a href="">About Intrust</a>
                     </div>
                     <div class="idcardNav__Link">
-                        <a href="">Contact</a>
+                        <a href="">Contact Us</a>
                     </div>
                     <div class="idcardNav__Link">
                         <a href="">Login</a>
@@ -57,9 +62,6 @@
                 </p>
             </div>
         </div>
-        <!-- <div class="FAQbutton">
-            <button>CONTACT US</button>
-        </div> -->
         <div class="FAQhome3">
             <div class="GQ">
                 <h1>General Questions</h1>
@@ -132,6 +134,21 @@
             panel.style.display = "block";
             }
         });
+        }
+        function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+        }
+        window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+            }
+        }
         }
     </script>
 </body>
