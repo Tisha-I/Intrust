@@ -1,0 +1,152 @@
+.processesmain-container {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.firstcontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+.firstcontainer1 {
+    width: 50%;
+    padding-top: 10%;
+}
+.firstcontainer1 h1 {
+    font-family: Poppins;
+    font-size: 46px;
+    font-weight: bold;
+}
+.firstcontainer1 p {
+    font-size: 17px;
+    padding-bottom: 25px;
+    font-family: Poppins;
+}
+.firstcontainerbtn button{
+    padding: 10px 40px;
+    background-color: #FFBF30;
+    color: #FFFFFF;
+    font-family: Poppins;
+    border-radius: 5px;
+    border: none;
+}
+.processdiv h1{
+    font-family: Poppins;
+    font-size: 46px;
+    color: #333333;
+}
+.processdiv p {
+    font-size: 17px;
+    color: #ADADB8;
+    font-family: 'Open Sans';
+    padding-left: 20%;
+    padding-right: 20%;
+}
+.processimg {
+    box-sizing: border-box;
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 10%;
+}
+.processimg img {
+    width: 100%;
+}
+.processdiv  {
+    text-align: center;
+    padding-top: 100px;
+}
+.processcontact {
+    display: flex;
+    flex-direction: row;
+}
+/* .reachout {
+    border-right: 3px solid #333333; 
+    padding: 0px 15px;
+}
+.getQuote {
+    border-right: 3px solid #333333;
+    padding: 0px 15px;
+}
+.workWith {
+    padding: 0px 15px;
+} */
+.processheading {
+    width: 50%;
+}
+.processform {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.processheading h1 {
+    font-size: 46px;
+    font-family: Poppins;
+    color: #333333;
+    font-weight: bold;
+}
+.processheading p {
+    font-size: 17px;
+    font-family: Open Sans;
+}
+.processnames {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-top: 5%;
+}
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px 0px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    border-radius: 12px;
+  }
+textarea {
+    height: 170px;
+}
+.fname {
+    width: 100%;
+    padding-right: 25px;
+}
+.companyname {
+    width: 100%;
+}
+input[type=submit] {
+    background-color: #FFBF30;
+    color: #FFFFFF;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    font-family: Poppins;
+    border-radius: 12px;
+    width: 100%;
+  }
+.processfooter {
+    color: #ADADB8;
+    text-align: center;
+    padding: 10px 10px;
+}
+@media only screen and (max-width: 768px){
+    .firstcontainer{
+        display: flex;
+        flex-direction: column;
+    }
+    .firstcontainer1{
+        width: 100%;
+    }
+    .processdiv  {
+        width: 100%;
+    }
+    .contact {
+        width: 100%;
+    }
+    .processdiv p {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .processheading {
+        width: 100%;
+    }
+}
