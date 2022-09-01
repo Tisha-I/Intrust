@@ -8,12 +8,14 @@
             <thead>                  
                 <tr>
                     <th>Name</th>
-                        <th>Email</th>
-                        <th>Phone</th>
-                        <th>Date</th>
-                        <th>Quantity</th>
-                        <th>Template</th>
-                        <th>Status</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Order Date</th>
+                    <th>Quantity</th>
+                    <th>Template</th>
+                    <th>Processed At</th>
+                    <th>Processed By</th>
+                    <th>Status</th>
                     <th>Update</th>
                 </tr>
             </thead>
@@ -25,6 +27,8 @@
                     <th>Date</th>
                     <th>Quantity</th>
                     <th>Template</th>
+                    <th>Processed At</th>
+                    <th>Processed By</th>
                     <th>Status</th>
                     <th>Update</th>
                 </tr>
@@ -40,6 +44,8 @@
                     <td><?php echo $row['created_at'] ?></td>
                     <td><?php echo $row['quantity'] ?></td>
                     <td><?php echo $row['template'] ?></td>
+                    <td><?php echo $row['processed_at'] ?></td>
+                    <td><?php echo $row['processed_by'] ?></td>
                     <td><?php echo $row['status'] ?></td>
                     <td><a href="update_order.php?id=<?php echo $row['id'];?>">Update</a></td>
                 </tr>

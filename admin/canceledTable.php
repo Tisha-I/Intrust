@@ -6,7 +6,7 @@
     
         include "header.php"; 
         
-        $query1 = "SELECT orders.id, company.name, company.email, company.phone, orders.created_at, idcard.quantity, idcard.template, orders.status  FROM orders join company on orders.company_id=company.id join idcard on orders.card_id=idcard.id WHERE orders.status='canceled';";
+        $query1 = "SELECT orders.id, company.name, company.email, company.phone, orders.created_at, idcard.quantity, idcard.template,orders.processed_at, orders.processed_by, orders.status  FROM orders join company on orders.company_id=company.id join idcard on orders.card_id=idcard.id WHERE orders.status='canceled';";
         $result1 = mysqli_query($link, $query1); 
     ?>
 
