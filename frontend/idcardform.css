@@ -330,9 +330,8 @@
     color: #333333;
     margin-bottom: 0;
 }
-.checkboxitems p {
-    font-family: 'Open Sans';
-    font-size: 17px;
+.checkboxitems h2 {
+    font-family: Poppins;
     margin-bottom: 0;
 }
 .checkboxitems {
@@ -340,7 +339,7 @@
     flex-direction: column;
     justify-content: space-around;
     padding-top: 20px;
-    font-family: Jost;
+    font-family: Poppins;
     font-size: 16px;
 }
 .checkboxitemsii {
@@ -352,7 +351,7 @@
 .checkboxitems1 {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .checkboxothers input {
     padding: 12px 0px;
