@@ -36,46 +36,43 @@
             </ul>
         </nav>
         <div id="layoutSidenav">
-            <div id="layoutSidenav_nav">
-                <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
-                    <div class="sb-sidenav-menu">
-                        <div class="nav">
-                            <div class="sb-sidenav-menu-heading"></div>
-                            <a class="nav-link" href="home.php">
-                                <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
-                                Dashboard
-                            </a>
-                            <div class="w3-bar-block">
-    
-
-    <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
-        <a class="nav-link collapsed w3-bar-item w3-button w3-padding w3-blue" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseAuth" aria-expanded="false" aria-controls="pagesCollapseAuth">
+        <div id="layoutSidenav_nav">
+            <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                <div class="sb-sidenav-menu">
+                    <div class="nav">
+                        <div class="sb-sidenav-menu-heading"></div>
+                        <a class="nav-link w3-blue" href="home.php" class="w3-blue">
+                            <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                            Dashboard
+                        </a>
+                        <div class="w3-bar-block">
+                            <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
+                                <a class="nav-link collapsed w3-bar-item w3-button w3-padding " href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseAuth" aria-expanded="false" aria-controls="pagesCollapseAuth">
                                         Orders
-            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-        </a>
-        <div class="collapse" id="pagesCollapseAuth" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
-            <nav class="sb-sidenav-menu-nested nav">
-                <a class="nav-link" href="deliveredTable.php">Delivered</a>
-                <a class="nav-link" href="pendingTable.php">Pending</a>
-                <a class="nav-link" href="canceledTable.php">Cancel</a>
-                <a class="nav-link" href="allOrder.php"> All </a>
-            </nav>
-        </div>
-    </nav>
+                                </a>
+                                <div class="" id="pagesCollapseAuth" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
+                                    <nav class="sb-sidenav-menu-nested nav">
+                                        <a class="nav-link" href="deliveredTable.php">Delivered</a>
+                                        <a class="nav-link" href="pendingTable.php">Pending</a>
+                                        <a class="nav-link" href="canceledTable.php">Cancel</a>
+                                        <a class="nav-link" href="allOrder.php"> All </a>
+                                    </nav>
+                                </div>
+                            </nav>
     
-    <br><br><br>
-    <a href="password.php" class="w3-bar-item w3-button w3-padding"><i class="fa fa-cog fa-fw"></i>  Forgot Password</a>
-    <a href="register.php" class="w3-bar-item w3-button w3-padding"><i class="fa fa-history fa-fw"></i>  Register</a><br><br>
-  </div>
-                            <div>
-            <a href="contactus.php" class="w3-bar-item w3-button w3-padding"><i class="fa fa-cog fa-fw"></i>  Contact Us</a>
-        </div>
+                    <br><br><br>
+                            <a href="password.php" class="w3-bar-item w3-button w3-padding"><i class="fa fa-cog fa-fw"></i>  Forgot Password</a>
+                            <a href="register.php" class="w3-bar-item w3-button w3-padding"><i class="fa fa-history fa-fw"></i>  Register</a><br><br>
                         </div>
-                    </div>
+                        <div>
+                            <a href="contactus.php" class="w3-bar-item w3-button w3-padding"><i class="fa fa-cog fa-fw"></i>  Contact Us</a>
+                        </div>
+                        </div>
+                </div>
         
-                    <div class="sb-sidenav-footer">
-                        <div class="small">Logged in as:</div>
+                <div class="sb-sidenav-footer">
+                    <div class="small">Logged in as:</div>
                         <?php echo $_SESSION['fname'].' '.$_SESSION['lname'] ?>
                     </div>
-                </nav>
-            </div>
+            </nav>
+        </div>

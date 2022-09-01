@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact Us</title>
     <link rel="stylesheet" href="contact.css">
     <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
@@ -27,10 +27,10 @@
                             <a href="/contact.html">Our Process</a>
                         </div>
                         <div class="idcardNav__Link">
-                            <a href="">FAQs</a>
+                            <a href="./FAQs.html">FAQs</a>
                         </div>
                         <div class="idcardNav__Link">
-                            <a href="">Contact Us</a>
+                            <a href="#contact">Contact Us</a>
                         </div>
                 </nav>
                 <div class="Navbar__Link Navbar__Link-toggle">
@@ -66,7 +66,7 @@
         <div class="processimg">
             <img src="images/svg2.svg" alt="">
         </div>
-        <div class="processform">
+        <div id="contact" class="processform">
             <div class="processheading">
                 <h1>Contact Us</h1>
                 <div class="hstack gap-3">
@@ -77,7 +77,7 @@
                     <div class="light">Work With Us</div>
                 </div>
             </div>
-            <form action="">
+            <form action="savemessage.php" method="post">
                 <div class="processnames">
                     <div class="fname">
                         <label for="fname">First Name</label>
@@ -93,11 +93,11 @@
                     <input type="text" id="email" name="email" placeholder=" &nbsp;&nbsp; Your Email..">
                 </div>
                 <div class="message">
-                    <label for="message">Subject</label>
+                    <label for="message">Message</label>
                     <textarea id="message" name="message" placeholder=" &nbsp;&nbsp; Write something.."></textarea>
                 </div>
                 <div class="submitbtn">
-                    <input type="submit" value="SEND MESSAGE">
+                    <input type="submit" name="submit" value="SEND MESSAGE">
                 </div>
             </form>
         </div>

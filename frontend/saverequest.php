@@ -48,7 +48,7 @@
         if ($company and $idcard and $orders){
             echo "<div id='alert' class='alert alert-success' role='alert'> Order sent!!</div>";
         }else{
-            echo "<div id='alert' class='alert alert-success' role='alert'> Incorrect username or password!!</div>";
+            echo "<div id='alert' class='alert alert-success' role='alert'> Message not sent, please resend!!!!</div>";
 
         }
     }
