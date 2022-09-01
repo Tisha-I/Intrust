@@ -21,6 +21,10 @@
     text-decoration: none;
     color: #5CB85C;
 }
+.idcardNav__Link a:hover {
+    text-decoration: 2px solid underline #5CB85C;
+    color: #5CB85C;
+}
 .idcardnavbtn2 {
     text-decoration: none;
     color: #FFFFFF;
@@ -119,8 +123,12 @@
     width: 50%;
 }
 .processform {
+    border: 1px solid #1B1C1E;
+    border-radius: 15px;
     padding-left: 5%;
     padding-right: 5%;
+    padding-bottom: 4%;
+    padding-top: 3%;
 }
 .processheading h1 {
     font-size: 46px;
@@ -153,9 +161,17 @@ textarea {
 .fname {
     width: 100%;
     padding-right: 25px;
+    padding-bottom: 25px;
 }
 .companyname {
     width: 100%;
+    padding-bottom: 25px;
+}
+.email {
+    padding-bottom: 25px;
+}
+.message {
+    padding-bottom: 25px;
 }
 input[type=submit] {
     background-color: #FFBF30;
@@ -170,9 +186,47 @@ input[type=submit] {
 .processfooter {
     color: #ADADB8;
     text-align: center;
-    padding: 10px 10px;
+    padding-top: 50px;
+    padding-bottom: 30px;
 }
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 768px) {
+    .idcardNav__Linkitems {
+        flex-direction: column;
+    }
+
+    .idcardnav {
+        flex-direction: column;
+    }
+    .idcardNav__Items {
+        flex-direction: column;
+    }
+    .idcardNav__Link a {
+        color: #5CB85C;
+        text-decoration: none;
+        float: right;
+    }
+
+    .idcardNav__Items {
+        display: none;
+        color: #F2F2F2;
+    }
+    .Navbar__ToggleShow {
+        display: flex;
+        align-self: flex-end;
+    }
+
+    .Navbar__Link-toggle {
+        padding-top: 15px;
+        align-self: flex-end;
+        display: initial;
+        position: absolute;
+        cursor: pointer;
+    }
+    .toggleicon i {
+        color: #5CB85C;
+        width: 30px;
+        height: 30px;
+    }
     .firstcontainer{
         display: flex;
         flex-direction: column;
