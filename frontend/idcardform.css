@@ -187,6 +187,16 @@
     padding: 15px;
     border-radius: 10px;
 }
+.carditem {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+}
+.carditem2 {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+}
 .QOCsInput {
     display: flex;
     flex-direction: column;
@@ -251,6 +261,7 @@
     overflow: auto;
     white-space: nowrap;
     overflow-y: hidden;
+    padding-top: 10px;
   }
   .scrollmenudiv {
     border: 1px solid rgba(27, 28, 30, 0.25);
@@ -268,11 +279,19 @@
     text-decoration: none;
     border: none;
   }
-  
+  .scrollmenuInput {
+    padding-top: 20px;
+  }
+  .scrollmenuoption img {
+    box-shadow: 0px 0px 10px #333333;
+    border-radius: 8px;
+  }
+  .scrollmenuoption img:hover {
+    transition: all 0.3s ease;
+    transform: scale(1.2);
+  }
   .scrollmenuoption:hover {
     background-color: #F2F2F2;
-    transition: all 0.3s ease;
-    transform: scale(1.1);
   }
   .carddesignselct {
     padding-bottom: 30px;
@@ -298,7 +317,6 @@
 }
 .fileinput {
     padding: 15px 0px;
-    /* background-color: green; */
     width: 100%;
     cursor: pointer;
     border: 1px solid rgba(27, 28, 30, 0.25);
@@ -326,28 +344,29 @@
 }
 .formcheckbox h1 {
     font-family: 'Open Sans';
-    font-size: 30px;
+    font-size: 25px;
     color: #333333;
     margin-bottom: 0;
+    padding-bottom: 15px;
 }
 .checkboxitems h2 {
-    font-family: Poppins;
+    font-family: 'Open Sans';
+    font-size: 20px;
     margin-bottom: 0;
+    padding-bottom: 35px;
+    font-weight: normal;
 }
 .checkboxitems {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     padding-top: 20px;
     font-family: Poppins;
-    font-size: 16px;
+    font-size: 13px;
 }
 .checkboxitemsii {
     display: flex;
     flex-direction: row;
 }
-/* .checkboxitemsii input {
-} */
 .checkboxitems1 {
     display: flex;
     flex-direction: row;
@@ -355,12 +374,83 @@
 }
 .checkboxothers input {
     padding: 12px 0px;
-    border-radius: 10px;
     border: none;
     border: 1px solid #333333;
     font-family: Poppins;
 }
-  @media only screen and (max-width: 768px) {
+.scrollmenuoption img {
+    height: 200px;
+}
+.scrollmenuInput input{
+    appearance: none;
+    -webkit-appearance: none;
+    border-radius: 50%;
+    border: 9px solid rgba(92, 184, 92, 0.4);
+}
+.scrollmenuInput input:checked{
+    appearance: none;
+    -webkit-appearance: none;
+    border-radius: 50%;
+    border: 4px solid #5CB85C;
+    outline: 5px solid rgba(92, 184, 92, 0.4);
+}
+.checkboxitemsi {
+    display: block;
+    position: relative;
+    padding-left: 15px;
+    cursor: pointer;
+    padding-bottom: 10px;
+}
+.checkboxitemsi input[type=checkbox] {
+    visibility: hidden;
+    align-self: center;
+}
+.checkboxothers{
+    padding: 5px 0px;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: 1px solid #333333;
+    font-family: Poppins;
+}
+.newcarditema{
+    padding-left: 15px;
+}
+.geekmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 17px;
+    width: 17px;
+    background-color: rgba(92, 184, 92, 0.4);
+    border-radius: 5px;
+  }
+.delete {
+    border: none;
+    color: #5CB85C;
+}
+.checkboxitemsi input:checked ~ .geekmark {
+    background-color: rgba(92, 184, 92, 0.4);
+}
+.geekmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.checkboxitemsi input:checked ~ .geekmark:after {
+    display: block;
+}
+.checkboxitemsi .geekmark:after {
+    left: 5px;
+    bottom: 3px;
+    width: 3px;
+    height: 9px;
+    border: solid #5CB85C;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+@media only screen and (max-width: 768px) {
     .idcardNav__Linkitems {
         flex-direction: column;
     }
@@ -376,25 +466,14 @@
         text-decoration: none;
         float: right;
     }
-/* 
-    .Navbar__Link-active a {
-        padding-left: 13%;
-    } */
-
     .idcardNav__Items {
         display: none;
         color: #F2F2F2;
     }
-/* 
-    .Navbar__Items--right {
-        margin-left: 0;
-    } */
-
     .Navbar__ToggleShow {
         display: flex;
         align-self: flex-end;
     }
-
     .Navbar__Link-toggle {
         padding-top: 15px;
         align-self: flex-end;
@@ -406,5 +485,19 @@
         color: #5CB85C;
         width: 30px;
         height: 30px;
+    }
+    .quantityofcards {
+        width: 100%;
+    }
+    .QOCs {
+        text-align: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+  }
+@media only screen and (max-width: 608px) {
+    .checkboxitems1 {
+        display: flex;
+        flex-direction: column;
     }
   }
