@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>INtrust</title>
     <link rel="stylesheet" href="intrustslider.css">
+    <link rel = "icon" href ="images/titlelogo.JPG" type = "image/x-icon">
     <script src="https://kit.fontawesome.com/0457335a94.js" crossorigin="anonymous"></script>
     <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
@@ -16,7 +17,7 @@
     <header>
         <div class="idcardnav">
             <div class="idcardnavlogo">
-                <img src="/images/intrust_logo.png" alt="">
+                <img src="./images/intrust_logo.png" alt="">
             </div>
             <nav class="idcardNav__Items">
                 <!-- <div class="idcardNav__Link">
@@ -26,14 +27,14 @@
                 </div> -->
                 <div class="idcardNav__Linkitems">
                     <div class="idcardNav__Link">
-                        <a href="">Home</a>
+                        <a href="./intrustslider.html">Home</a>
                     </div>
                     <div class="idcardNav__Link">
                         <a onclick="myFunction()" class="dropbtn">Services <i class="fa-solid fa-caret-down"></i></a>
                         <div class="dropdown">
                             <div id="myDropdown" class="dropdown-content">
                               <a href="#">Verification</a>
-                              <a href="#">ID Card Service</a>
+                              <a href="./index.html">ID Card Service</a>
                               <a href="#">NIN Pre-Enrollment</a>
                             </div>
                         </div>
@@ -42,7 +43,7 @@
                         <a href="">About Intrust</a>
                     </div>
                     <div class="idcardNav__Link">
-                        <a href="">Contact Us</a>
+                        <a href="./index.html#CUS">Contact Us</a>
                     </div>
                     <div class="idcardNav__Link">
                         <a href="">Login</a>
@@ -88,7 +89,7 @@
                         <p>Our streamlined ID Card generation process takes care of the hassle, leaving you and your workers with quality identification, delivered with ease.
                         </p>
                         <div class="slider1btn">
-                            <a href=""><button class="button2">ORDER NOW</button></a>
+                            <a href="./idcardform.html"><button class="button2">ORDER NOW</button></a>
                         </div>
                     </div>
                 </div>
@@ -114,7 +115,7 @@
         slideIndex++;
         if (slideIndex > slides.length) {slideIndex = 1}    
         slides[slideIndex-1].style.display = "block";  
-        setTimeout(showSlides, 5000);
+        setTimeout(showSlides, 7000);
         }
         function myFunction() {
         document.getElementById("myDropdown").classList.toggle("show");

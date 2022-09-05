@@ -115,6 +115,8 @@ header {
     max-width: 100%;
     position: relative;
     margin: auto;
+    animation-fill-mode: forwards;
+    height: 100vh;
 }
 
 .slider1 {
@@ -135,11 +137,11 @@ header {
 }
 .home1 h1 {
     font-family: Poppins;
-    font-weight: bold;
     font-size: 46px;
     color: #333333;
     margin-bottom: 0;
     padding-bottom: 0%;
+    font-weight: bold;
 }
 .home1 p {
     font-family: Open Sans;
