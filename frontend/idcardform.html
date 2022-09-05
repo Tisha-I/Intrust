@@ -49,7 +49,7 @@
             <div class="idcardformh1">
                 <h1>Requisition Form</h1>
             </div>
-            <form action="saverequest.php" method="post" class="idcardformform">
+            <form action="saverequest.php" method="post" enctype="multipart/form-data" class="idcardformform">
                 <div class="idcardNOO">
                     <label for="NOO">Name Of Organisation</label> <br>
                     <input type="text" name="name" placeholder="&nbsp;&nbsp;&nbsp;&nbsp; Enter The Name Of Your Organisation" required>
@@ -180,8 +180,11 @@
                     </div>
                 </div>
                     <div class="leg">
-                        <label for="fileinput">Upload Image</label>
-                        <input class="fileinput" type="file" name="custom">
+                        <div>
+                            <label for="fileinput">Upload Image</label>
+                            <input class="fileinput" type="file" name="custom">
+                        </div>
+                            
                     </div>
                     <div class="formcheckbox">
                         <h1>Card Info</h1>
@@ -189,27 +192,27 @@
                             <div class="checkboxitems">
                                 <h2>Front Of ID Card</h2>
                                 <label class="checkboxitemsi">
-                                    <input type="checkbox">Name
+                                    <input type="checkbox" name="finfo[]" value="Name">Name
                                     <span class="geekmark"></span>
                                 </label>
                                 <label class="checkboxitemsi">
-                                    <input type="checkbox">School/Organization
+                                    <input type="checkbox" name="finfo[]" value="School/Organization">School/Organization
                                     <span class="geekmark"></span>
                                 </label>
                                 <label class="checkboxitemsi">
-                                    <input type="checkbox">Org ID/Matric Number
+                                    <input type="checkbox" name="finfo[]" value="Org ID/Matric Number">Org ID/Matric Number
                                     <span class="geekmark"></span>
                                 </label>
                                 <label class="checkboxitemsi">
-                                    <input type="checkbox">Department
+                                    <input type="checkbox" name="finfo[]" value="Department">Department
                                     <span class="geekmark"></span>
                                 </label>
                                 <label class="checkboxitemsi">
-                                    <input type="checkbox">Picture
+                                    <input type="checkbox" name="finfo[]" value="Picture">Picture
                                     <span class="geekmark"></span>
                                 </label>
                                 <label class="checkboxitemsi">
-                                    <input type="checkbox">Signature
+                                    <input type="checkbox" name="finfo[]" value="Signature">Signature
                                     <span class="geekmark"></span>
                                 </label>
                                 <div id="carditems"></div>
@@ -227,23 +230,23 @@
                             <div class="checkboxitems">
                                 <h2>Back Of ID Card</h2>
                                 <label class="checkboxitemsi">
-                                    <input type="checkbox">Declaration Text
+                                    <input type="checkbox" name="binfo[]" value="Declaration Text">Declaration Text
                                     <span class="geekmark"></span>
                                 </label>
                                 <label class="checkboxitemsi">
-                                    <input type="checkbox">Name of Organisation
+                                    <input type="checkbox" name="binfo[]" value="Name of Organisation">Name of Organisation
                                     <span class="geekmark"></span>
                                 </label>
                                 <label class="checkboxitemsi">
-                                    <input type="checkbox">Address
+                                    <input type="checkbox" name="binfo[]" value="Address">Address
                                     <span class="geekmark"></span>
                                 </label>
                                 <label class="checkboxitemsi">
-                                    <input type="checkbox">Contact Details
+                                    <input type="checkbox" name="binfo[]" value="Contact Details">Contact Details
                                     <span class="geekmark"></span>
                                 </label>
                                 <label class="checkboxitemsi">
-                                    <input type="checkbox">Signature
+                                    <input type="checkbox" name="binfo[]" value="Signature">Signature
                                     <span class="geekmark"></span>
                                 </label>
                                 <div id="carditems2"></div>
