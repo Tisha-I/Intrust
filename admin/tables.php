@@ -8,29 +8,35 @@
             <thead>                  
                 <tr>
                     <th>Name</th>
-                    <th>Email</th>
-                    <th>Phone</th>
-                    <th>Order Date</th>
-                    <th>Quantity</th>
-                    <th>Template</th>
-                    <th>Processed At</th>
-                    <th>Processed By</th>
-                    <th>Status</th>
-                    <th>Update</th>
+                                        <th>Email</th>
+                                        <th>Phone</th>
+                                        <th>Date</th>
+                                        <th>Quantity</th>
+                                        <th>Template</th>
+                                        <th>Front Card</th>
+                                        <th>Back Card</th>
+                                        <th>Other</th>
+                                        <th>Processed By</th>
+                                        <th>Processed At</th>
+                                        <th>Status</th>
+                                        <th>Update</th>
                 </tr>
             </thead>
             <tfoot>
                 <tr>
                     <th>Name</th>
-                    <th>Email</th>
-                    <th>Phone</th>
-                    <th>Date</th>
-                    <th>Quantity</th>
-                    <th>Template</th>
-                    <th>Processed At</th>
-                    <th>Processed By</th>
-                    <th>Status</th>
-                    <th>Update</th>
+                                        <th>Email</th>
+                                        <th>Phone</th>
+                                        <th>Date</th>
+                                        <th>Quantity</th>
+                                        <th>Template</th>
+                                        <th>Front Card</th>
+                                        <th>Back Card</th>
+                                        <th>Other</th>
+                                        <th>Processed By</th>
+                                        <th>Processed At</th>
+                                        <th>Status</th>
+                                        <th>Update</th>
                 </tr>
             </tfoot>
             <tbody>
@@ -39,15 +45,18 @@
                 ?>
                 <tr>
                     <td><?php echo $row['name'] ?></td>
-                    <td><?php echo $row['email'] ?></td>
-                    <td><?php echo $row['phone'] ?></td>
-                    <td><?php echo $row['created_at'] ?></td>
-                    <td><?php echo $row['quantity'] ?></td>
-                    <td><?php echo $row['template'] ?></td>
-                    <td><?php echo $row['processed_at'] ?></td>
-                    <td><?php echo $row['processed_by'] ?></td>
-                    <td><?php echo $row['status'] ?></td>
-                    <td><a href="update_order.php?id=<?php echo $row['id'];?>">Update</a></td>
+                                            <td><?php echo $row['email'] ?></td>
+                                            <td><?php echo $row['phone'] ?></td>
+                                            <td><?php echo $row['created_at'] ?></td>
+                                            <td><?php echo $row['quantity'] ?></td>
+                                            <td><?php echo $row['picture'] ?></td>
+                                            <td><?php echo $row['frontcard'] ?></td>
+                                            <td><?php echo $row['backcard'] ?></td>
+                                            <td><?php echo $row['other'] ?></td>
+                                            <td><?php echo $row['processed_by'] ?></td>
+                                            <td><?php echo $row['processed_at'] ?></td>
+                                            <td><?php echo $row['status'] ?></td>
+                                            <td><a href="update_order.php?id=<?php echo $row['id'];?>">Update</a></td>
                 </tr>
                 <?php } ?>
             </tbody>

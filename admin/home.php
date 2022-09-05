@@ -36,7 +36,7 @@
             $count4++;
         }
 
-        $query = "SELECT orders.id, company.name, company.email, company.phone, orders.created_at, idcard.quantity, idcard.template, orders.status  FROM orders join company on orders.company_id=company.id join idcard on orders.card_id=idcard.id;";
+        $query = "SELECT company.name,company.email, company.phone,orders.id, orders.created_at, orders.quantity, orders.frontcard,orders.backcard, orders.other,orders.processed_by,orders.processed_at,orders.status,template.picture  FROM orders join company on orders.company_id=company.id join template on orders.card_id=template.id;";
         $result = mysqli_query($link, $query);
 
         include "header.php";
@@ -102,6 +102,11 @@
                                         <th>Date</th>
                                         <th>Quantity</th>
                                         <th>Template</th>
+                                        <th>Front Card</th>
+                                        <th>Back Card</th>
+                                        <th>Other</th>
+                                        <th>Processed By</th>
+                                        <th>Processed At</th>
                                         <th>Status</th>
                                         <th>Update</th>
                                     </tr>
@@ -114,6 +119,11 @@
                                         <th>Date</th>
                                         <th>Quantity</th>
                                         <th>Template</th>
+                                        <th>Front Card</th>
+                                        <th>Back Card</th>
+                                        <th>Other</th>
+                                        <th>Processed By</th>
+                                        <th>Processed At</th>
                                         <th>Status</th>
                                         <th>Update</th>
                                     </tr>
@@ -128,7 +138,12 @@
                                             <td><?php echo $row['phone'] ?></td>
                                             <td><?php echo $row['created_at'] ?></td>
                                             <td><?php echo $row['quantity'] ?></td>
-                                            <td><?php echo $row['template'] ?></td>
+                                            <td><?php echo $row['picture'] ?></td>
+                                            <td><?php echo $row['frontcard'] ?></td>
+                                            <td><?php echo $row['backcard'] ?></td>
+                                            <td><?php echo $row['other'] ?></td>
+                                            <td><?php echo $row['processed_by'] ?></td>
+                                            <td><?php echo $row['processed_at'] ?></td>
                                             <td><?php echo $row['status'] ?></td>
                                             <td><a href="update_order.php?id=<?php echo $row['id'];?>">Update</a></td>
                                         </tr>

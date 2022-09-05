@@ -3,7 +3,6 @@
 	session_start();
 	if(isset($_SESSION["login"])){
 		include("./connection.php");
-		
 
 		$id = $_GET['id'];
 		$query = "SELECT * FROM `orders` WHERE id = '$id';";

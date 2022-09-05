@@ -5,7 +5,7 @@
     if(isset($_SESSION["login"])){
         include "header.php";
 
-        $query1 = "SELECT orders.id, company.name, company.email, company.phone, orders.created_at, idcard.quantity, idcard.template,orders.processed_at, orders.processed_by, orders.status  FROM orders join company on orders.company_id=company.id join idcard on orders.card_id=idcard.id;";
+        $query1 = "SELECT company.name,company.email, company.phone,orders.id, orders.created_at, orders.quantity, orders.frontcard,orders.backcard, orders.other,orders.processed_by,orders.processed_at,orders.status,template.picture  FROM orders join company on orders.company_id=company.id join template on orders.card_id=template.id;";
         $result1 = mysqli_query($link, $query1); 
 ?>
 
