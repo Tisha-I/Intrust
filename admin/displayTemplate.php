@@ -25,8 +25,9 @@
                                 <thead>
                                     <tr>
                                         <th>Name</th>
-                                        <th>Picture</th> 
+                                        <th>Tempered By</th> 
                                         <th>Status</th>
+                                        <th>Picture</th>
                                     </tr>
                                 </thead>
                                 <tfoot>
@@ -43,7 +44,7 @@
                                     ?>
                                         <tr>
                                             <td><?php echo $row['picture'] ?></td>
-                                            <td><?php echo $row['tempered_by'] ?></td>
+                                            <td><?php echo $row['add_by'] ?></td>
                                             <td><?php echo $row['status'] ?></td>
                                             <td><img width="200" src="uploads/<?=$row['picture']?>"></td>
                                             

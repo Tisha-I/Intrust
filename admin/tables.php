@@ -32,7 +32,6 @@
                                         <th>Design</th>
                                         <th>Front Card</th>
                                         <th>Back Card</th>
-                                        <th>Other</th>
                                         <th>Processed By</th>
                                         <th>Processed At</th>
                                         <th>Status</th>
@@ -49,10 +48,9 @@
                                             <td><?php echo $row['phone'] ?></td>
                                             <td><?php echo $row['created_at'] ?></td>
                                             <td><?php echo $row['quantity'] ?></td>
-                                            <td><?php echo $row['design'] ?></td>
+                                            <td><img width="200" src="uploads/<?=$row['design']?>"></td>
                                             <td><?php echo $row['frontcard'] ?></td>
                                             <td><?php echo $row['backcard'] ?></td>
-                                            <td><?php echo $row['other'] ?></td>
                                             <td><?php echo $row['processed_by'] ?></td>
                                             <td><?php echo $row['processed_at'] ?></td>
                                             <td><?php echo $row['status'] ?></td>

@@ -19,7 +19,9 @@ if(isset($_SESSION["login"])){
                                   <th scope="col">Sender Name</th>
                                   <th scope="col">Sender Email</th>
                                   <th scope="col">Company Name</th>
+                                  <th scope="col">Date</th>
                                   <th scope="col">Content</th>
+                                  <th scope="col">Status</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -34,7 +36,9 @@ if(isset($_SESSION["login"])){
                                     <td><?php echo $row['user_name'] ?></td>
                                     <td><?php echo $row['user_email'] ?></td>
                                     <td><?php echo $row['company_name'] ?></td>
+                                    <td><?php echo $row['date'] ?></td>
                                     <td><?php echo $row['content'] ?></td>
+                                    <td><?php echo $row['status'] ?></td>
                                 </tr>
                                 <?php 
                                     } 

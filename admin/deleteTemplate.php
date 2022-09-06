@@ -4,7 +4,7 @@
         include("./connection.php");
 
         
-        $query = "SELECT * FROM template WHERE status=1;";
+        $query = "SELECT * FROM template WHERE status='active';";
         $result = mysqli_query($link, $query);
 
         include "header.php";

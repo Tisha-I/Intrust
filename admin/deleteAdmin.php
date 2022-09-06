@@ -31,7 +31,7 @@
                                         <th>Email</th>
                                         <th>Tempered By</th>
                                         <th>Status</th>
-                                        <th>Status</th>
+                                        <th>Delete</th>
                                     </tr>
                                 </thead>
                                 <tfoot>
