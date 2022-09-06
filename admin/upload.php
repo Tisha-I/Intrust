@@ -31,7 +31,7 @@ if (isset($_POST['submit']) && isset($_FILES['my_image'])) {
 				// Insert into Database
 				$admin = $_SESSION['id'];
 				$sql = "INSERT INTO template(picture, add_by) 
-				        VALUES('$new_img_name', '$adim')";
+				        VALUES('$new_img_name', '$admin')";
 				mysqli_query($link, $sql);
 				header("Location: displayTemplate.php");
 			}else {

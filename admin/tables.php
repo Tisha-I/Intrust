@@ -12,7 +12,7 @@
                                         <th>Phone</th>
                                         <th>Date</th>
                                         <th>Quantity</th>
-                                        <th>Template</th>
+                                        <th>Design</th>
                                         <th>Front Card</th>
                                         <th>Back Card</th>
                                         <th>Other</th>
@@ -29,7 +29,7 @@
                                         <th>Phone</th>
                                         <th>Date</th>
                                         <th>Quantity</th>
-                                        <th>Template</th>
+                                        <th>Design</th>
                                         <th>Front Card</th>
                                         <th>Back Card</th>
                                         <th>Other</th>
@@ -49,7 +49,7 @@
                                             <td><?php echo $row['phone'] ?></td>
                                             <td><?php echo $row['created_at'] ?></td>
                                             <td><?php echo $row['quantity'] ?></td>
-                                            <td><?php echo $row['picture'] ?></td>
+                                            <td><?php echo $row['design'] ?></td>
                                             <td><?php echo $row['frontcard'] ?></td>
                                             <td><?php echo $row['backcard'] ?></td>
                                             <td><?php echo $row['other'] ?></td>
