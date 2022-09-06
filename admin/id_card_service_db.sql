@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 05, 2022 at 06:18 PM
+-- Generation Time: Sep 06, 2022 at 08:03 AM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 8.1.6
 
@@ -47,7 +47,8 @@ CREATE TABLE `contactus` (
   `user_email` varchar(255) NOT NULL,
   `company_name` varchar(255) NOT NULL,
   `content` text NOT NULL,
-  `date` datetime NOT NULL
+  `date` datetime NOT NULL,
+  `status` varchar(60) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -63,7 +64,6 @@ CREATE TABLE `orders` (
   `quantity` varchar(20) NOT NULL,
   `frontcard` varchar(255) NOT NULL,
   `backcard` varchar(255) NOT NULL,
-  `other` varchar(255) NOT NULL,
   `design` varchar(255) NOT NULL,
   `processed_at` datetime DEFAULT NULL,
   `processed_by` int(11) DEFAULT NULL,
@@ -102,6 +102,14 @@ CREATE TABLE `template` (
   `deleted_by` int(11) DEFAULT NULL,
   `status` varchar(255) NOT NULL DEFAULT 'active'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `template`
+--
+
+INSERT INTO `template` (`id`, `picture`, `add_by`, `deleted_by`, `status`) VALUES
+(21, 'IMG-6316bd3c9f2769.58562707.svg', 1, NULL, 'active'),
+(22, 'IMG-6316d5963076a8.82998428.svg', 1, NULL, 'active');
 
 -- --------------------------------------------------------
 
@@ -169,25 +177,25 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `company`
 --
 ALTER TABLE `company`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=51;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=65;
 
 --
 -- AUTO_INCREMENT for table `contactus`
 --
 ALTER TABLE `contactus`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `orders`
 --
 ALTER TABLE `orders`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=55;
 
 --
 -- AUTO_INCREMENT for table `template`
 --
 ALTER TABLE `template`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 
 --
 -- AUTO_INCREMENT for table `user`
