@@ -29,7 +29,7 @@
                         <a href="./FAQs.html">FAQs</a>
                     </div>
                     <div class="idcardNav__Link">
-                        <a href="./index.html#CUS">Contact Us</a>
+                        <a href="index.html#CUS">Contact Us</a>
                     </div>
             </nav>
             <div class="Navbar__Link Navbar__Link-toggle">
