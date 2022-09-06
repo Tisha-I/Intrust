@@ -143,7 +143,7 @@
                                 while ($row = mysqli_fetch_array($result)) {
                             ?>
                             <div class="scrollmenuoption">
-                                <img width="200" src="./../admin/uploads/<?=$row['picture']?>" alt="<?=$row['picture']?>">
+                                <img src="./../admin/uploads/<?=$row['picture']?>" alt="<?=$row['picture']?>">
                                 <!-- <img src="images/template1.svg" alt=""> -->
                                 <div class="scrollmenuInput">
                                     <input type="radio" checked="checked" name="template" value="<?=$row['picture']?>">
