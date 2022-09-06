@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 06, 2022 at 08:03 AM
+-- Generation Time: Sep 06, 2022 at 11:58 AM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 8.1.6
 
@@ -108,8 +108,9 @@ CREATE TABLE `template` (
 --
 
 INSERT INTO `template` (`id`, `picture`, `add_by`, `deleted_by`, `status`) VALUES
-(21, 'IMG-6316bd3c9f2769.58562707.svg', 1, NULL, 'active'),
-(22, 'IMG-6316d5963076a8.82998428.svg', 1, NULL, 'active');
+(23, 'IMG-63170e03e735d5.24659466.svg', 1, 1, 'deleted'),
+(24, 'IMG-6317124cb58644.48412161.svg', 1, NULL, 'active'),
+(25, 'IMG-63171574498099.39166566.svg', 1, NULL, 'active');
 
 -- --------------------------------------------------------
 
@@ -133,7 +134,7 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `fname`, `lname`, `username`, `password`, `email`, `registered_by`, `status`) VALUES
-(1, 'Halidou', 'SEBGO', 'admin', 'admin', 'sebgohalidou@gmail.com', 5, 1);
+(1, 'Halidou', 'SEBGO', 'admin', 'admin', 'sebgohalidou@gmail.com', 1, 1);
 
 --
 -- Indexes for dumped tables
@@ -177,7 +178,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `company`
 --
 ALTER TABLE `company`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=65;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=66;
 
 --
 -- AUTO_INCREMENT for table `contactus`
@@ -189,13 +190,13 @@ ALTER TABLE `contactus`
 -- AUTO_INCREMENT for table `orders`
 --
 ALTER TABLE `orders`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=55;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=56;
 
 --
 -- AUTO_INCREMENT for table `template`
 --
 ALTER TABLE `template`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 
 --
 -- AUTO_INCREMENT for table `user`
