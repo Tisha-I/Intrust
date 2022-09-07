@@ -2,7 +2,7 @@
     include("./connection.php");
     session_start();
     if(isset($_SESSION["login"])){
-        $query1 = "SELECT * FROM orders join company on orders.company_id=company.id WHERE orders.status='pending';";
+        $query1 = "SELECT orders.id, orders.created_at,orders.quantity, orders.design, orders.frontcard, orders.backcard,orders.status, orders.processed_by, orders.processed_at, company.name,company.email, company.phone FROM orders join company on orders.company_id=company.id WHERE orders.status='pending';";
         $result1 = mysqli_query($link, $query1); 
         include "header.php";
   ?>

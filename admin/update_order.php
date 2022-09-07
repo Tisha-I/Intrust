@@ -6,7 +6,7 @@
 		include("./connection.php");
 
 		$id1 = $_GET['id'];
-		$query = "SELECT * FROM `orders` WHERE id = '$id1';";
+		$query = "SELECT orders.id, orders.created_at, orders.processed_by, orders.processed_at, company.name FROM `orders` join `company` on orders.company_id=company.id WHERE orders.id = '$id1';";
 
 		$result = mysqli_query($link, $query);
 		$row = mysqli_fetch_assoc($result);
@@ -55,7 +55,7 @@
 		<table class="table table-striped table-dark">
 			<tr>
 				<th scope="col">id</th>
-				<th scope="col">Company id</th>
+				<th scope="col">Company Name</th>
 				<th scope="col">Created at</th>						
 				<th scope="col">Processed at</th>
 				<th scope="col">Procesed by</th>
@@ -63,7 +63,7 @@
 			</tr>
 			<tr>
 				<td><input type="number" name="id" value="<?php echo $row['id']; ?>" class="form-control"></td>
-				<td><input type="number" name="company_id" value="<?php echo $row['company_id']; ?>" class="form-control"></td>
+				<td><input type="text" name="company_name" value="<?php echo $row['name']; ?>" class="form-control"></td>
 				<td><input type="datetime" name="created_at" class="form-control" value="<?php echo $row['created_at']; ?>" ></td>
 				<td><input type="datetime" name="processed_at" class="form-control" value="<?php echo $row['processed_at']; ?>" ></td>
 				<td><input type="datetime" name="processed_by" class="form-control" value="<?php echo $row['processed_by']; ?>" ></td>

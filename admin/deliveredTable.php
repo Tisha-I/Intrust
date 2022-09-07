@@ -4,7 +4,7 @@
     include("./connection.php");
     if(isset($_SESSION["login"])){
         include "header.php";
-        $query1 = "SELECT *  FROM orders join company on orders.company_id=company.id WHERE orders.status='delivered';";
+        $query1 = "SELECT orders.id, orders.created_at,orders.quantity, orders.design, orders.frontcard, orders.backcard,orders.status, orders.processed_by, orders.processed_at, company.name,company.email, company.phone  FROM orders join company on orders.company_id=company.id WHERE orders.status='delivered';";
         $result1 = mysqli_query($link, $query1); 
 ?>
         <div id="layoutSidenav_content">
