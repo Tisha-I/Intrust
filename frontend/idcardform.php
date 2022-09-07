@@ -63,7 +63,7 @@
                         </div>
                         <div class="idformphoneno">
                             <label for="phoneno">Phone Number</label> <br>
-                            <input type="tel" name="phone" placeholder="&nbsp;&nbsp;&nbsp;&nbsp; Enter Company Number" required>
+                            <input type="tel" minlength="11" maxlength="15" name="phone" placeholder="&nbsp;&nbsp;&nbsp;&nbsp; Enter Company Number" required>
                         </div>
                     </div>
                 </div>
@@ -162,7 +162,7 @@
                             
                     </div>
                     <div class="formcheckbox">
-                        <h1>Card Info</h1>
+                        <h1>Card Details</h1>
                          <div class="checkboxitems1">
                             <div class="checkboxitems">
                                 <h2>Front Of ID Card</h2>
