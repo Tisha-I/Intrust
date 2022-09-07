@@ -136,7 +136,7 @@
                                             <td><?php echo $row['phone'] ?></td>
                                             <td><?php echo $row['created_at'] ?></td>
                                             <td><?php echo $row['quantity'] ?></td>
-                                            <td><?php echo $row['design'] ?></td>
+                                            <td><img width="200" src="uploads/<?=$row['design']?>"></td>
                                             <td><?php echo $row['frontcard'] ?></td>
                                             <td><?php echo $row['backcard'] ?></td>
                                             <td><?php echo $row['processed_by'] ?></td>
