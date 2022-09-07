@@ -5,7 +5,7 @@
 
 	$id = $_GET['id'];
 	$admin = $_SESSION["id"];
-	$q = "UPDATE user SET status='0', registered_by='$admin' WHERE id='$id';";
+	$q = "UPDATE idcard_admin SET status='0', registered_by='$admin' WHERE id='$id';";
 	$res = mysqli_query($link, $q);
 	if ($res) {
 		echo "<div id='alert' class='alert alert-success' role='alert'> Admin removed </div>";	

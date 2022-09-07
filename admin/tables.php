@@ -15,7 +15,6 @@
                                         <th>Design</th>
                                         <th>Front Card</th>
                                         <th>Back Card</th>
-                                        <th>Other</th>
                                         <th>Processed By</th>
                                         <th>Processed At</th>
                                         <th>Status</th>

@@ -1,11 +1,12 @@
 
 <?php 
+ error_reporting(0);
 	session_start();
 	if(isset($_SESSION["login"])){
 		include("./connection.php");
 
-		$id = $_GET['id'];
-		$query = "SELECT * FROM `orders` WHERE id = '$id';";
+		$id1 = $_GET['id'];
+		$query = "SELECT * FROM `orders` WHERE id = '$id1';";
 
 		$result = mysqli_query($link, $query);
 		$row = mysqli_fetch_assoc($result);
@@ -55,7 +56,6 @@
 			<tr>
 				<th scope="col">id</th>
 				<th scope="col">Company id</th>
-				<th scope="col">Card id</th>
 				<th scope="col">Created at</th>						
 				<th scope="col">Processed at</th>
 				<th scope="col">Procesed by</th>
@@ -64,7 +64,6 @@
 			<tr>
 				<td><input type="number" name="id" value="<?php echo $row['id']; ?>" class="form-control"></td>
 				<td><input type="number" name="company_id" value="<?php echo $row['company_id']; ?>" class="form-control"></td>
-				<td><input type="number" name="card_id" class="form-control" value="<?php echo $row['card_id']; ?>" ></td>
 				<td><input type="datetime" name="created_at" class="form-control" value="<?php echo $row['created_at']; ?>" ></td>
 				<td><input type="datetime" name="processed_at" class="form-control" value="<?php echo $row['processed_at']; ?>" ></td>
 				<td><input type="datetime" name="processed_by" class="form-control" value="<?php echo $row['processed_by']; ?>" ></td>

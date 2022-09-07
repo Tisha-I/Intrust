@@ -6,7 +6,7 @@
         $username = $_POST['username'];
         $password = $_POST['password'];
 
-        $query = "SELECT * FROM user WHERE username ='$username' AND password = '$password' AND status=1;";
+        $query = "SELECT * FROM idcard_admin WHERE username ='$username' AND password = '$password' AND status=1;";
         $result = mysqli_query($link, $query);
 
         if (mysqli_num_rows($result) > 0){

@@ -4,7 +4,7 @@
         include("./connection.php");
 
         
-        $query = "SELECT * FROM user;";
+        $query = "SELECT * FROM idcard_admin;";
         $result = mysqli_query($link, $query);
 
         include "header.php";
@@ -30,7 +30,6 @@
                                         <th>Password</th>
                                         <th>Email</th>
                                         <th>Tempered By</th>
-                                        <th>Status</th>
                                         <th>Status</th>
                                     </tr>
                                 </thead>

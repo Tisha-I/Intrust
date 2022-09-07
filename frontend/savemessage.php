@@ -7,9 +7,11 @@
         $company = $_POST['companyname'];
         $email = $_POST['email'];
         $message = $_POST['message'];
-        $date = date('d-m-y h:i:s');
+        $timezone = date_default_timezone_get();
 
-   		$query1 = "INSERT INTO `contactus`(`user_name`, `user_email`, `company_name`, `content`, `$date`) VALUES ('$fullname','$email','$company','$message', '$date')";
+        $date = date('d-m-y     H:i:S');
+
+   		$query1 = "INSERT INTO `contactus`(`user_name`, `user_email`, `company_name`, `content`) VALUES ('$fullname','$email','$company','$message')";
    		$result1 = mysqli_query($link, $query1);
         
 

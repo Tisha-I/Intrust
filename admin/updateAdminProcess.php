@@ -5,7 +5,7 @@
 		include("./connection.php");
 
 		$id = $_GET['id'];
-		$query = "SELECT * FROM `user` WHERE id = '$id';";
+		$query = "SELECT * FROM `idcard_admin` WHERE id = '$id';";
 
 		$result = mysqli_query($link, $query);
 		$row = mysqli_fetch_assoc($result);
@@ -20,7 +20,7 @@
 			$status = $_POST['status'];
 			$admin = $_SESSION["id"];
 
-			$query = "UPDATE `user` SET `fname`='$fname',`lname`='$lname',`username`='$username',`password`='$password',`email`='$email',`registered_by`='$admin',`status`='$status' WHERE id='$id';";
+			$query = "UPDATE `idcard_admin` SET `fname`='$fname',`lname`='$lname',`username`='$username',`password`='$password',`email`='$email',`registered_by`='$admin',`status`='$status' WHERE id='$id';";
 			$result = mysqli_query($link, $query);
 			if ($result) {
 				header("Location: displayAdmin.php");
@@ -57,6 +57,7 @@
 		<span class="heading">Edit Admin</span>
 		<table class="table table-striped table-dark">
 			<tr>
+				<th>ID</th>
 				<th>First Name</th>
                                         <th>Last Name</th> 
                                         <th>Username</th>

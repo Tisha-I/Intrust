@@ -11,7 +11,7 @@
         $repassword = $_POST['retyped_password'];
 
         if ($password === $repassword) {
-            $reg = "INSERT INTO  user (`fname`, `lname`, `username`, `password`, `email`) VALUES('$fname', '$lname', '$username', '$password', '$email');";
+            $reg = "INSERT INTO  idcard_admin (`fname`, `lname`, `username`, `password`, `email`) VALUES('$fname', '$lname', '$username', '$password', '$email');";
                  
             $res = mysqli_query($link, $reg);
                 if($res)
@@ -34,7 +34,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Register - SB Admin</title>
+        <title>Register Admin</title>
         <link href="css/styles.css" rel="stylesheet" />
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
     </head>
