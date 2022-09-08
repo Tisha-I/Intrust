@@ -104,12 +104,13 @@
 }
 .processimg {
     box-sizing: border-box;
-    width: 100%;
+    /* width: 100%; */
     padding-top: 5%;
     padding-bottom: 10%;
 }
 .processimg img {
     width: 100%;
+    padding-left: 2%;
 }
 .processdiv  {
     text-align: center;
