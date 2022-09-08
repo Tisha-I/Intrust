@@ -21,17 +21,20 @@
                 <img src="./images/intrust_logo.png" alt="">
             </div>
             <nav class="idcardNav__Items">
-                <div class="idcardNav__Linkitems">
-                    <div class="idcardNav__Link">
-                        <a href="./intrustslider.html">Home</a>
-                    </div>
-                    <div class="idcardNav__Link">
-                        <a href="./FAQs.html">FAQs</a>
-                    </div>
-                    <div class="idcardNav__Link">
-                        <a href="index.html#CUS">Contact Us</a>
-                    </div>
-            </nav>
+                    <div class="idcardNav__Linkitems">
+                        <div class="idcardNav__Link">
+                            <a href="https://www.intrust.ng/">Home</a>
+                        </div>
+                        <div class="idcardNav__Link">
+                            <a href="./index.html">Our Process</a>
+                        </div>
+                        <div class="idcardNav__Link">
+                            <a href="./FAQs.html">FAQs</a>
+                        </div>
+                        <div class="idcardNav__Link">
+                            <a href="index.html#CUS">Contact Us</a>
+                        </div>
+                </nav>
             <div class="Navbar__Link Navbar__Link-toggle">
                 <div class="toggleicon">
                     <i class="fa-solid fa-bars"></i>
@@ -53,23 +56,23 @@
             <form action="saverequest.php" method="post" enctype="multipart/form-data" class="idcardformform">
                 <div class="idcardNOO">
                     <label for="NOO">Name Of Organisation</label> <br>
-                    <input type="text" name="name" placeholder="&nbsp;&nbsp;&nbsp;&nbsp; Enter The Name Of Your Organisation" required>
+                    <input type="text" name="name" placeholder="Enter The Name Of Your Organisation" required>
                 </div>
                 <div class="input-icons">
                     <div class="idformemailandphoneno">
                         <div class="idformemail">
                             <label for="idemail">Email</label> <br>
-                            <input type="email" name="email" id="email" placeholder="&nbsp;&nbsp;&nbsp;&nbsp; Enter Company Email" required>
+                            <input type="email" name="email" id="email" placeholder="Enter Company Email" required>
                         </div>
                         <div class="idformphoneno">
                             <label for="phoneno">Phone Number</label> <br>
-                            <input type="tel" minlength="11" maxlength="15" name="phone" placeholder="&nbsp;&nbsp;&nbsp;&nbsp; Enter Company Number" required>
+                            <input type="tel" minlength="11" maxlength="15" name="phone" placeholder="Enter Company Number" required>
                         </div>
                     </div>
                 </div>
                 <div class="idformaddress">
                     <label for="Address">Address</label> <br>
-                    <input type="text" name="address" placeholder="&nbsp;&nbsp;&nbsp;&nbsp; Enter The Address Of Your Organisation" required>
+                    <input type="text" name="address" placeholder="Enter The Address Of Your Organisation" required>
                 </div>
                 <div class="quantityofcards">
                     <div class="QOCh1">
