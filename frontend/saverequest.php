@@ -58,7 +58,7 @@
         
    		// $query2 = "INSERT INTO `idcard`(`template`, `frontcard`, `backcard`, `quantity`) VALUES ('$template','$front_card','$back_card','$quantity')";
    		// $result2 = mysqli_query($link, $query2);
-        // $idcard = mysqli_affected_rows($link);
+     //    $idcard = mysqli_affected_rows($link);
    		// $q2 = "select * from company where  id=(select max(id) from company)";
    		// $r2 = mysqli_query($link, $q2);
    		// $ro2 = mysqli_fetch_assoc($r2);
