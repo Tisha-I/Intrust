@@ -3,8 +3,8 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Password Reset PHP</title>
-	<link rel="stylesheet" href="main.css">
+	<title>Password Reset</title>
+	<link rel="stylesheet" href="./style/main.css">
 </head>
 <body>
 

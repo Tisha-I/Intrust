@@ -4,13 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <title>Password Reset</title>
-  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="./style/main.css">
 </head>
 <body>
   <form class="login-form" action="new_password.php" method="post">
     <h2 class="form-title">New password</h2>
     <!-- form validation messages -->
-    <?php include('messages.php'); ?>
+    <?php include('message.php'); ?>
     <div class="form-group">
       <label>New password</label>
       <input type="password" name="new_pass">
