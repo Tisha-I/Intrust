@@ -1,4 +1,4 @@
-
+<?php include('app_logic.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -22,14 +22,16 @@
                                     <div class="card-header"><h3 class="text-center font-weight-light my-4">Password Recovery</h3></div>
                                     <div class="card-body">
                                         <div class="small mb-3 text-muted">Enter your email address and we will send you a link to reset your password.</div>
-                                        <form method="post" action="send_link.php" name="reset">
+                                        <!-- form validation messages -->
+                                        <?php include('message.php'); ?>
+                                        <form method="post" action="enter_email.php" name="reset">
                                             <div class="form-floating mb-3">
                                                 <input class="form-control" name="email" id="inputEmail" type="email" placeholder="name@example.com" />
                                                 <label for="inputEmail">Email address</label>
                                             </div>
                                             <div class="d-flex align-items-center justify-content-between mt-4 mb-0">
-                                                <a class="small" href="login.html">Return to login</a>
-                                                <input class="btn btn-primary" type="submit" name="submit_email" value="Reset Password"/>
+                                                <a class="small" href="index.php">Return to login</a>
+                                                <input class="btn btn-primary" type="submit" name="reset-password" value="Reset Password"/>
                                             </div>
                                         </form>
                                     </div>
