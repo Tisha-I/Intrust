@@ -8,13 +8,13 @@
         <meta name="author" content="" />
         <title>ID Card Service</title>
         <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
-        <link href="css/styles.css" rel="stylesheet" />
+        <link href="../css/styles.css" rel="stylesheet" />
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
     </head>
     <body class="sb-nav-fixed">
         <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
             <!-- Navbar Brand-->
-            <a class="navbar-brand ps-3" href="home.php">Interra Networks</a>
+            <a class="navbar-brand ps-3" href="../home.php">Interra Networks</a>
             <!-- Sidebar Toggle-->
             <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
             <!-- Navbar Search-->
@@ -28,7 +28,7 @@
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                         <li><a class="dropdown-item" href="#!">Settings</a></li>
                         <li><hr class="dropdown-divider" /></li>
-                        <li><a class="dropdown-item" href="logout.php">Logout</a></li>
+                        <li><a class="dropdown-item" href="../logout.php">Logout</a></li>
                     </ul>
                 </li>
             </ul>
@@ -39,7 +39,7 @@
                     <div class="sb-sidenav-menu">
                         <div class="nav">
                             <div class="sb-sidenav-menu-heading">Core</div>
-                            <a class="nav-link" href="home.php">
+                            <a class="nav-link" href="../home.php">
                                 <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                                 Dashboard
                             </a>
@@ -51,9 +51,9 @@
                             </a>
                             <div class="collapse" id="collapseTemplate" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav">
-                                    <a class="nav-link" href="./templates/addTemplate.php">Add</a>
-                                    <a class="nav-link" href="./templates/deleteTemplate.php">Delete</a>
-                                    <a class="nav-link" href="./templates/displayTemplate.php">display</a>
+                                    <a class="nav-link" href="../templates/addTemplate.php">Add</a>
+                                    <a class="nav-link" href="../templates/deleteTemplate.php">Delete</a>
+                                    <a class="nav-link" href="../templates/displayTemplate.php">display</a>
                                 </nav>
                             </div>
                             <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
@@ -63,10 +63,10 @@
                             </a>
                             <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav">
-                                        <a class="nav-link" href="./orders/deliveredTable.php">Delivered</a>
-                                        <a class="nav-link" href="./orders/pendingTable.php">Pending</a>
-                                        <a class="nav-link" href="./orders/canceledTable.php">Cancel</a>
-                                        <a class="nav-link" href="./orders/allOrder.php"> All </a>
+                                        <a class="nav-link" href="deliveredTable.php">Delivered</a>
+                                        <a class="nav-link" href="pendingTable.php">Pending</a>
+                                        <a class="nav-link" href="canceledTable.php">Cancel</a>
+                                        <a class="nav-link" href="allOrder.php"> All </a>
                                 </nav>
                             </div>
                             <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
@@ -82,8 +82,8 @@
                                     </a>
                                     <div class="collapse" id="pagesCollapseAuth" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
                                         <nav class="sb-sidenav-menu-nested nav">
-                                            <a class="nav-link" href="./admins/authentication/register.php">Register</a>
-                                            <a class="nav-link" href="./admins/authentication/enter_email.php">Forgot Password</a>
+                                            <a class="nav-link" href="../admins/register.php">Register</a>
+                                            <a class="nav-link" href="../admins/enter_email.php">Forgot Password</a>
                                         </nav>
                                     </div>
                                     <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseError" aria-expanded="false" aria-controls="pagesCollapseError">
@@ -92,15 +92,15 @@
                                     </a>
                                     <div class="collapse" id="pagesCollapseError" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
                                         <nav class="sb-sidenav-menu-nested nav">
-                                            <a class="nav-link" href="./admins/manage/deleteAdmin.php">Remove</a>
-                                            <a class="nav-link" href="./admins/manage/updateAdmin.php">Update</a>
-                                            <a class="nav-link" href="./admins/manage/displayAdmin.php">Display</a>
+                                            <a class="nav-link" href="../admins/deleteAdmin.php">Remove</a>
+                                            <a class="nav-link" href="../admins/updateAdmin.php">Update</a>
+                                            <a class="nav-link" href="../admins/displayAdmin.php">Display</a>
                                         </nav>
                                     </div>
                                 </nav>
                             </div>
                             <div class="sb-sidenav-menu-heading">Contact Us</div>
-                            <a class="nav-link" href="contactus.php">
+                            <a class="nav-link" href="../contactus/contactus.php">
                                 <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
                                 Messages
                             </a>
