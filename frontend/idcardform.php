@@ -140,7 +140,7 @@
                         <div class="scrollmenu">
                             <?php
 
-                                $query = "SELECT * FROM template;";
+                                $query = "SELECT * FROM template WHERE status='active';";
                                 $result = mysqli_query($link, $query);
 
                                 while ($row = mysqli_fetch_array($result)) {

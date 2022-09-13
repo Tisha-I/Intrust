@@ -7,7 +7,7 @@
         $query = "SELECT * FROM idcard_admin;";
         $result = mysqli_query($link, $query);
 
-        include "adminHeader.php";
+        include ("./adminHeader.php");
 ?>
         
         <div id="layoutSidenav_content">
@@ -64,9 +64,9 @@
                     </div>
                 </div>
             </main>
-            <?php include 'footer.php'; ?>
+            <?php include './../../footer.php'; ?>
         </div>
-        <?php include 'javaScript.php'; ?>
+        <?php include './javaScript.php'; ?>
     </body>
 </html>
 <?php 

@@ -62,7 +62,7 @@
             </main>
             <?php include '../footer.php'; ?>
         </div>
-        <?php include '../javaScript.php'; ?>
+        <?php include './javaScript.php'; ?>
     </body>
 </html>
 <?php 
