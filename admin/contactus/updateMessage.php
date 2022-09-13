@@ -3,7 +3,7 @@
  error_reporting(0);
 	session_start();
 	if(isset($_SESSION["login"])){
-		include("./connection.php");
+		include("./../connection.php");
 
 		$id = $_GET['id'];
 		$query = "SELECT * FROM `contactus` WHERE id = '$id';";
@@ -20,7 +20,7 @@
 			$query = "UPDATE `contactus` SET `status`='$status' WHERE `id`='$id';";
 			$result = mysqli_query($link, $query);
 			if ($result) {
-				header("Location: contactus.php");
+				header("Location: ./contactus.php");
 				echo "<div id='alert' class='alert alert-success' role='alert'> Updated successfully </div>";
 
 			}else{
@@ -87,6 +87,6 @@
 <?php 
     }else{
     	echo"You must login" ;
-    	echo "<a href='./index.php'>login</a>";
+    	echo "<a href='./../index.php'>login</a>";
 	}
 ?>

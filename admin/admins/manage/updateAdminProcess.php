@@ -2,7 +2,7 @@
 <?php 
 	session_start();
 	if(isset($_SESSION["login"])){
-		include("./connection.php");
+		include("./../../connection.php");
 
 		$id = $_GET['id'];
 		$query = "SELECT * FROM `idcard_admin` WHERE id = '$id';";
@@ -11,16 +11,15 @@
 		$row = mysqli_fetch_assoc($result);
 
 		if (array_key_exists("soumet", $_POST)) {
-			$id = $_POST['id'];
+			
 			$fname = $_POST['fname'];
 			$lname = $_POST['lname'];
 			$username = $_POST['username'];
-			$password = $_POST['password'];
 			$email = $_POST['email'];
 			$status = $_POST['status'];
 			$admin = $_SESSION["id"];
 
-			$query = "UPDATE `idcard_admin` SET `fname`='$fname',`lname`='$lname',`username`='$username',`password`='$password',`email`='$email',`registered_by`='$admin',`status`='$status' WHERE id='$id';";
+			$query = "UPDATE `idcard_admin` SET `fname`='$fname',`lname`='$lname',`username`='$username',`email`='$email',`registered_by`='$admin',`status`='$status' WHERE id='$id';";
 			$result = mysqli_query($link, $query);
 			if ($result) {
 				header("Location: displayAdmin.php");
@@ -57,24 +56,25 @@
 		<span class="heading">Edit Admin</span>
 		<table class="table table-striped table-dark">
 			<tr>
-				<th>ID</th>
 				<th>First Name</th>
-                                        <th>Last Name</th> 
-                                        <th>Username</th>
-                                        <th>Password</th>
-                                        <th>Email</th>
-                                        <th>Tempered By</th>
-                                        <th>Status</th>
+                <th>Last Name</th> 
+                <th>Username</th>
+                <th>Email</th>
+                <th>Tempered By</th>
+                <th>Status</th>
 			</tr>
 			<tr>
-				<td><input type="number" name="id" value="<?php echo $row['id']; ?>" class="form-control"></td>
 				<td><input type="text" name="fname" value="<?php echo $row['fname']; ?>" class="form-control"></td>
 				<td><input type="text" name="lname" value="<?php echo $row['lname']; ?>" class="form-control"></td>
 				<td><input type="text" name="username" class="form-control" value="<?php echo $row['username']; ?>" ></td>
-				<td><input type="text" name="password" class="form-control" value="<?php echo $row['password']; ?>" ></td>
 				<td><input type="text" name="email" class="form-control" value="<?php echo $row['email']; ?>" ></td>
 				<td><input type="number" name="registered_by" class="form-control" value="<?php echo $row['registered_by']; ?>" ></td>
-				<td><input type="number" name="status" class="form-control" value="<?php echo $row['status']; ?>" ></td>
+				<td>
+					<select name="status"  class="form-control" class="demoInputBox">
+						<option value="active">active</option>
+						<option value="inactive">inactive</option>
+					</select> 
+				</td>
 			</tr>
 		</table>
 				

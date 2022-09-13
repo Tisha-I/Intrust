@@ -4,7 +4,7 @@
 $errors = [];
 $user_id = "";
 // connect to database
-include("./connection.php");
+include("./../../connection.php");
 
 /*
   Accept email of user whose password is to be reset
@@ -59,7 +59,7 @@ if (isset($_POST['new_password'])) {
       $new_pass = md5($new_pass);
       $sql = "UPDATE idcard_admin SET password='$new_pass' WHERE email='$email'";
       $results = mysqli_query($link, $sql);
-      header('location: index.php');
+      header('location: ../../index.php');
     }
   }
 }

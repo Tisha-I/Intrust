@@ -1,28 +1,36 @@
 <?php
     session_start();
-    include 'connection.php';
-    include('app_logic.php');
-    
-    if (isset($_POST['submit'])){
-        
-        $username = $_POST['username'];
-        $password = $_POST['password'];
+    include('connection.php');
+    $errors = array(); 
+        // LOGIN USER
+    if (isset($_POST['login_user'])) {
+      $username = mysqli_real_escape_string($link, $_POST['username']);
+      $password = mysqli_real_escape_string($link, $_POST['password']);
 
-        $query = "SELECT * FROM idcard_admin WHERE username ='$username' AND password = '$password' AND status=1;";
-        $result = mysqli_query($link, $query);
+      if (empty($username)) {
+        array_push($errors, "Username is required");
+      }
+      if (empty($password)) {
+        array_push($errors, "Password is required");
+      }
 
-        if (mysqli_num_rows($result) > 0){
-            $row = mysqli_fetch_array($result);
-            $_SESSION["login"] = true;
-            $_SESSION["fname"] = $row['fname'];
-            $_SESSION["lname"] = $row['lname'];
-            $_SESSION["id"] = $row['id'];
-            header("Location: home.php");
-        }else{
-            header("location: index.php");
-            echo "<div id='alert' class='alert alert-success' role='alert'> Incorrect username or password!!</div>";
-
+      if (count($errors) == 0) {
+        $password = md5($password);
+        $query = "SELECT * FROM idcard_admin WHERE username='$username' AND password='$password' AND status='active';";
+        $results = mysqli_query($link, $query);
+        if (mysqli_num_rows($results) == 1) {
+          $row = mysqli_fetch_array($results);
+          $_SESSION['username'] = $username;
+          $_SESSION["login"] = true;
+          $_SESSION["fname"] = $row['fname'];
+          $_SESSION["lname"] = $row['lname'];
+          $_SESSION["id"] = $row['id'];
+          $_SESSION['success'] = "You are now logged in";
+          header('location: home.php');
+        }else {
+          array_push($errors, "Wrong username/password combination");
         }
+      }
     }
 ?>
 
@@ -48,7 +56,7 @@
                                 <div class="card shadow-lg border-0 rounded-lg mt-5">
                                     <div class="card-header"><h3 class="text-center font-weight-light my-4">Login</h3></div>
                                     <div class="card-body">
-                                        <?php include('message.php'); ?>
+                                        <?php include('./message.php'); ?>
                                         <form action="index.php" method="post">
                                             <div class="form-floating mb-3">
                                                 <input class="form-control" id="username" type="txt" placeholder="user name" name="username" />
@@ -64,7 +72,7 @@
                                             </div>
                                             <div class="d-flex align-items-center justify-content-between mt-4 mb-0">
                                                 <a class="small" href="enter_email.php">Forgot Password?</a>
-                                                <button class="btn btn-primary" name="submit"> Login </button>
+                                                <button class="btn btn-primary" name="login_user"> Login </button>
                                             </div>
                                         </form>
                                     </div>

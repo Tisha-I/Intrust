@@ -1,4 +1,6 @@
-<?php include('server.php'); ?>
+<?php include('server.php'); 
+if(isset($_SESSION["login"])){
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -9,7 +11,7 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
         <title>Register Admin</title>
-        <link href="css/styles.css" rel="stylesheet" />
+        <link href="./../../css/styles.css" rel="stylesheet" />
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
     </head>
     <body class="bg-primary">
@@ -23,6 +25,7 @@
                                     <div class="card-header"><h3 class="text-center font-weight-light my-4">Create Account</h3></div>
                                     <div class="card-body">
                                         <form method="post" action="register.php">
+                                            <?php include('errors.php'); ?>
                                             <div class="row mb-3">
                                                 <div class="col-md-6">
                                                     <div class="form-floating mb-3 mb-md-0">
@@ -71,7 +74,7 @@
                                         </form>
                                     </div>
                                     <div class="card-footer text-center py-3">
-                                        <div class="small"><a href="index.php">Have an account? Go to login</a></div>
+                                        <div class="small"><a href="../../index.php">Have an account? Go to login</a></div>
                                     </div>
                                 </div>
                             </div>
@@ -79,20 +82,11 @@
                     </div>
                 </main>
             </div>
-            <div id="layoutAuthentication_footer">
-                <footer class="py-4 bg-light mt-auto">
-                    <div class="container-fluid px-4">
-                        <div class="d-flex align-items-center justify-content-between small">
-                            <div class="text-muted">Copyright &copy; <?php echo date("Y"); ?> Interra Networks Limited. All rights reserved.</div>
-                            <div>
-                                <a href="#">Terms &amp; Conditions</a>
-                            </div>
-                        </div>
-                    </div>
-                </footer>
-            </div>
+            <?php include './../../footer.php'; ?>
         </div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-        <script src="js/scripts.js"></script>
+        <?php include './../../javaScript.php'; ?>
+        
     </body>
 </html>
+
+<?php } ?>

@@ -8,7 +8,7 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
         <title>Password Reset</title>
-        <link href="css/styles.css" rel="stylesheet" />
+        <link href="./../../css/styles.css" rel="stylesheet" />
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
     </head>
     <body class="bg-primary">
@@ -23,7 +23,7 @@
                                     <div class="card-body">
                                         <div class="small mb-3 text-muted">Enter your email address and we will send you a link to reset your password.</div>
                                         <!-- form validation messages -->
-                                        <?php include('message.php'); ?>
+                                        <?php include('./../../message.php'); ?>
                                         <form method="post" action="enter_email.php" name="reset">
                                             <div class="form-floating mb-3">
                                                 <input class="form-control" name="email" id="inputEmail" type="email" placeholder="name@example.com" />
@@ -35,9 +35,9 @@
                                             </div>
                                         </form>
                                     </div>
-                                    <div class="card-footer text-center py-3">
+                                    <!-- <div class="card-footer text-center py-3">
                                         <div class="small"><a href="register.html">Need an account? Sign up!</a></div>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
                         </div>
@@ -45,10 +45,9 @@
                 </main>
             </div>
             <div id="layoutAuthentication_footer">
-                <?php include 'footer.php'; ?>
+                <?php include './../../footer.php'; ?>
             </div>
         </div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-        <script src="js/scripts.js"></script>
+        <?php  include('./../../javaScript.php'); ?>
     </body>
 </html>

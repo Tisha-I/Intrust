@@ -3,8 +3,7 @@
     session_start();
 
     // initializing variables
-
-    $admin = $_SESSION["id"];
+  
     $fname = "";
     $lname = "";
     $username = "";
@@ -12,7 +11,7 @@
     $errors = array(); 
 
     // connect to the database
-    $link = mysqli_connect('localhost', 'root', '', 'id_card_service_db');
+    include('./../../connection.php');
 
     // REGISTER USER
     if (isset($_POST['submit'])) {
@@ -55,11 +54,14 @@
       if (count($errors) == 0) {
         $password = md5($password_1);//encrypt the password before saving in the database
 
-        $query = "INSERT INTO  idcard_admin (`fname`, `lname`, `username`, `password`, `email`, `registered_by`) VALUES('$fname', '$lname', '$username', '$password', '$email','$admin');";;
+     $admin = $_SESSION["id"];
+     $query = "INSERT INTO  idcard_admin (`fname`, `lname`, `username`, `password`, `email`, `registered_by`) VALUES('$fname', '$lname', '$username', '$password', '$email','$admin');";;
         mysqli_query($link, $query);
-        // $_SESSION['username'] = $username;
-        // $_SESSION['success'] = "You are now logged in";
-        header('location: index.php');
+        $_SESSION['username'] = $username;
+        $_SESSION['success'] = "You are now logged in";
+        header('location: ./../manage/displayAdmin.php');
       }
     }
+
+
 ?>
