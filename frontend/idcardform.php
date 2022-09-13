@@ -160,7 +160,7 @@
                     <div class="leg">
                         <div>
                             <label for="fileinput">Upload Image</label>
-                            <input class="fileinput" type="file" accept=".svg" name="custom">
+                            <input class="fileinput" type="file" accept=".svg, .jpg, .png" name="custom">
                         </div>
                             
                     </div>
