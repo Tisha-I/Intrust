@@ -34,7 +34,7 @@ if (isset($_POST['reset-password'])) {
     $subject = "Reset your password on examplesite.com";
     $msg = "Hi there, click on this <a href=\"new_password.php?token=" . $token . "\">link</a> to reset your password on our site";
     $msg = wordwrap($msg,70);
-    $headers = "From: info@examplesite.com";
+    $headers = "From: sebgohalidou@gmail.com";
     mail($to, $subject, $msg, $headers);
     header('location: pending.php?email=' . $email);
   }
