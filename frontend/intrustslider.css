@@ -15,7 +15,6 @@ header {
     padding-right: 5%;
     background-color: #FFFFFF;
 }
-/* @import url('https://fonts.googleapis.com/css?family=Open+Sans'); */
 .idcardNav__Items {
     display: flex;
     flex-direction: row;
@@ -195,19 +194,11 @@ header {
         text-decoration: none;
         float: right;
     }
-/* 
-    .Navbar__Link-active a {
-        padding-left: 13%;
-    } */
 
     .idcardNav__Items {
         display: none;
         color: #F2F2F2;
     }
-/* 
-    .Navbar__Items--right {
-        margin-left: 0;
-    } */
 
     .Navbar__ToggleShow {
         display: flex;

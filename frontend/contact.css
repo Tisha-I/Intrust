@@ -130,6 +130,11 @@
     padding-right: 5%;
     padding-bottom: 4%;
     padding-top: 3%;
+    width: 80%;
+    text-align: justify;
+}
+.indexcontform {
+    padding-top: 3%;
 }
 .processheading h1 {
     font-size: 46px;
@@ -143,17 +148,16 @@
 }
 .processnames {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 100%;
-    padding-top: 5%;
 }
+
 .processform input[type=text], select, textarea {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
     margin-top: 6px;
     margin-bottom: 16px;
-    /* resize: vertical; */
     resize: none;
     border-radius: 12px;
     outline: none;
@@ -164,7 +168,6 @@
 }
 .fname {
     width: 100%;
-    padding-right: 25px;
     padding-bottom: 25px;
 }
 .companyname {
@@ -192,6 +195,46 @@ input[type=submit] {
     text-align: center;
     padding-top: 50px;
     padding-bottom: 30px;
+}
+.indexcontform {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.indexform1 {
+    width: 30%;
+}
+.indexform2 {
+    width: 30%;
+}
+.indexform3 {
+    width: 30%;
+}
+.indexform2 h1 {
+    font-size: 20px;
+}
+.indexform2 p {
+    margin: 0;
+}
+.indexform1 a i {
+    color: #FFBF30;
+}
+.indexform1links {
+    justify-content: space-between;
+    width: 50%;
+    display: flex;
+}
+.call-us {
+    padding-bottom: 5%;
+}
+.ouraddress {
+    padding-bottom: 5%;
+}
+.call-email {
+    padding-bottom: 5%;
+}
+.bushours {
+    padding-bottom: 5%;
 }
 @media only screen and (max-width: 768px) {
     .idcardNav__Linkitems {
@@ -249,6 +292,23 @@ input[type=submit] {
         padding-right: 5%;
     }
     .processheading {
+        width: 100%;
+    }
+    .indexcontform {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .indexform1 {
+        width: 100%;
+    }
+    .indexform2 {
+        width: 100%;
+    }
+    .indexform3 {
+        width: 100%;
+    }
+    .processform {
         width: 100%;
     }
 }

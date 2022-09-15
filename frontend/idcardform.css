@@ -5,7 +5,6 @@
   margin-right: 0;
   background-color: #f5f5f5;
 }
-/* @import url('https://fonts.googleapis.com/css?family=Open+Sans'); */
 .idcardhero {
   padding-left: 5%;
   padding-right: 5%;
@@ -101,14 +100,14 @@
   width: 100%;
   border-radius: 12px;
   font-family: "Open Sans";
-  font-size: 14px;
+  font-size: 15px;
   border: 1px solid rgba(27, 28, 30, 0.25);
   padding: 15px !important;
   margin-top: 10px;
   outline: none;
 }
 .idcardNOO label {
-  font-size: 14px;
+  font-size: 16px;
   font-family: Open Sans;
   font-weight: bold;
 }
@@ -124,10 +123,11 @@
   padding: 15px !important;
   margin-top: 10px;
   outline: none;
+  font-size: 15px;
 }
 .idformemailandphoneno label {
   font-family: "Open Sans";
-  font-size: 14px;
+  font-size: 16px;
   font-weight: bold;
 }
 .idformemail {
@@ -141,7 +141,7 @@
 }
 .idformaddress label {
   font-family: "Open Sans";
-  font-size: 14px;
+  font-size: 16px;
   font-weight: bold;
 }
 .idformaddress input {
@@ -151,6 +151,7 @@
   padding: 15px !important;
   margin-top: 10px;
   outline: none;
+  font-size: 15px;
 }
 .quantityofcards {
   display: flex;
@@ -174,14 +175,28 @@
   align-items: center;
   align-content: center;
 }
-.QOCh1 {
+.QOCh1 label {
   font-family: "Open Sans";
-  padding-bottom: 15px;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: bold;
+}
+.QOCh1 p{
+  font-family: "Open Sans";
+  font-size: 15px;
+  /* padding-bottom: 15px; */
+}
+#idbackview {
+  display: none;
+}
+#idfrontview {
+  display: none;
 }
 .carddesign {
   padding-top: 30px;
+}
+.carddesignselct p {
+  font-family: "Open Sans";
+  font-size: 15px;
 }
 .carddesign select {
   width: 100%;
@@ -213,7 +228,7 @@
   position: relative;
   align-items: center;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 16px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -262,20 +277,22 @@
 .carddesignselect {
   padding-bottom: 30px;
 }
-.scrollmenu {
+/*.scrollmenu {
   background-color: #f2f2f2;
   overflow: auto;
   white-space: nowrap;
   overflow-y: hidden;
   padding-top: 10px;
 }
-.scrollmenudiv {
+ .scrollmenudiv {
   border: 1px solid rgba(27, 28, 30, 0.25);
   border-radius: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 10px;
   padding-right: 10px;
+  width: 30%;
+  display: none;
 }
 .scrollmenuoption {
   display: inline-block;
@@ -298,7 +315,7 @@
 }
 .scrollmenuoption:hover {
   background-color: #f2f2f2;
-}
+} */
 .carddesignselct {
   padding-bottom: 30px;
   color: #333333;
@@ -315,7 +332,7 @@
   border: none;
   color: #ffffff;
   font-family: "Open Sans";
-  font-size: 14px;
+  font-size: 15px;
   font-weight: bold;
 }
 .placerequestbtn button:hover {
@@ -333,41 +350,48 @@
   width: 100%;
 }
 .leg label {
-  font-size: 14px;
+  font-size: 16px;
   font-family: "Open Sans";
   font-weight: bold;
 }
 .carddesignselct label {
   color: #333333;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: bold;
   font-family: Open Sans;
 }
 .formcheckbox {
   display: flex;
   flex-direction: column;
-  padding-top: 30px;
+  padding-top: 20px;
 }
 .formcheckbox h1 {
   font-family: "Open Sans";
-  font-size: 25px;
+  font-size: 16px;
   color: #333333;
   margin-bottom: 0;
-  padding-bottom: 15px;
+  padding-bottom: 5px;
+}
+.formcheckbox p {
+  font-family: "Open Sans";
+  font-size: 15px;
 }
 .checkboxitems h2 {
   font-family: "Open Sans";
-  font-size: 20px;
+  font-size: 15px;
   margin-bottom: 0;
-  padding-bottom: 35px;
+  padding-bottom: 25px;
   font-weight: normal;
+}
+.checkboxitems h2:hover {
+  cursor: pointer;
 }
 .checkboxitems {
   display: flex;
   flex-direction: column;
   padding-top: 20px;
   font-family: Poppins;
-  font-size: 13px;
+  font-size: 15px;
 }
 .checkboxitemsii {
   display: flex;
@@ -457,6 +481,129 @@
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
+.templater{
+  position: relative;
+  width: fit-content;
+  width: 40%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  align-self: center;
+  }
+
+  .templater .template{
+  position: absolute;
+  height: 80%;
+  width: 100%;
+  clip-path: circle(0% at 0 50%);
+  align-self: center;
+  text-align: center;
+  }
+  .templatediv {
+    display: none;
+  }
+
+  .templater .template.active{
+  clip-path: circle(150% at 0 50%);
+  transition: 2s;
+  }
+
+  .templater .template input {
+      position: absolute;
+      
+  }
+  .scrollmenuInput1 input {
+      appearance: none;
+      -webkit-appearance: none;
+      border-radius: 50%;
+      border: 9px solid rgba(92, 184, 92, 0.6);
+  }
+  .scrollmenuInput1 input:checked {
+      appearance: none;
+      -webkit-appearance: none;
+      border-radius: 50%;
+      border: 4px solid #5cb85c;
+      outline: 5px solid rgba(92, 184, 92, 0.4);
+  }
+  .templater .template img{
+  position: relative;
+  width: auto;
+  height: 90%;
+  align-self: center;
+  box-shadow: 0px 0px 10px #333333;
+  }
+  .navigation{
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  }
+
+  .templater:hover .navigation{
+  opacity: 1;
+  }
+
+  .prev-btn, .next-btn{
+  z-index: 999;
+  font-size: 2em;
+  color: #222;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  cursor: pointer;
+  }
+
+  .prev-btn{
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+
+  }
+
+  .next-btn{
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  }
+  .QOCtext {
+    font-size: 16px;
+    font-family: Poppins;
+}
+.QOCform-control1 {
+    display: none;
+}
+.QOCform-group input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+
+.QOCform-group input[type=number] {
+-moz-appearance: textfield;
+}
+.QOCform-group label {
+    font-family: "Open Sans";
+    font-size: 15px;
+}
+.QOCform-group input {
+    font-family: "Open Sans";
+    font-size: 15px;
+    padding: 12px;
+    width: 100px;
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid rgba(27, 28, 30, 0.25);
+}
+.QOCform-control {
+    margin-bottom: 10px;
+}
+@media (max-width: 900px){
+  .templater{
+    width: 100%;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .idcardNav__Linkitems {
     flex-direction: column;
@@ -501,15 +648,17 @@
     justify-content: space-between;
     width: 100%;
   }
+  .templater .template img{
+    width: 90%;
+    box-shadow: none;
+    }
 }
 @media only screen and (max-width: 608px) {
   .checkboxitems1 {
     display: flex;
     flex-direction: column;
   }
+  .scrollmenudiv {
+    width: 50%;
+  }
 }
-
-/*input {
-  padding: 15px !important;
-  margin-top: 10px;
-}*/
