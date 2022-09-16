@@ -68,6 +68,6 @@
 <?php 
     }else{
     echo"You must login" ;
-    echo "<a href='./index.php'>login</a>";
+    echo "<a href='./../index.php'>login</a>";
     }
 ?>

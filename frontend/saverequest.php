@@ -2,13 +2,14 @@
 	include "../admin/connection.php";
 
 	if (isset($_POST['submit'])){
-
+        
         $name = $_POST['name'];
+        $personName = $_POST['personname'];
         $email = $_POST['email'];
         $phone = $_POST['phone'];
         $address = $_POST['address'];
-        $design = isset($_POST['design'])? $_POST['design']:2;
-        $quantity = $_POST['radio'];
+        $design = $_POST['design'];
+        $quantity = $_POST['quantity'];
         $template =$design ==1? $_POST['template']: $_FILES['custom']['name'];
         $checkbox1=$_POST['finfo'];
         $front_other=$_POST['front_other'];  
@@ -40,7 +41,7 @@
             $allowed_exs = array("jpg", "jpeg", "png", "svg"); 
             if (in_array($img_ex_lc, $allowed_exs)) {
                 $new_img_name = uniqid("IMG-", true).'.'.$img_ex_lc;
-                $img_upload_path = '../admin/uploads/'.$new_img_name;
+                $img_upload_path = './../admin/templates/uploads/'.$new_img_name;
                 move_uploaded_file($tmp_name, $img_upload_path);
                 $template = $new_img_name;
             }else {
@@ -48,8 +49,8 @@
                  header("Location: idcardform.php?error=$em");
              }
         }
-        $design = isset($new_img_name)? $new_img_name:"Null";
-   		$query1 = "INSERT INTO `company`(`name`, `email`, `phone`, `address`) VALUES ('$name','$email','$phone','$address')";
+
+   		$query1 = "INSERT INTO `company`(`name`,`personname`, `email`, `phone`, `address`) VALUES ('$name','$personName','$email','$phone','$address')";
    		$result1 = mysqli_query($link, $query1);
         $company = mysqli_affected_rows($link);
    		$q1 = "select * from company where  id=(select max(id) from company)";

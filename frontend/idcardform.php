@@ -60,7 +60,7 @@
                 </div>
                 <div class="idcardNOO">
                     <label for="NOO">Name of Contact Person</label> <br>
-                    <input type="text" name="name" placeholder="Enter Your Name" required>
+                    <input type="text" name="personname" placeholder="Enter Your Name" required>
                 </div>
                 <div class="input-icons">
                     <div class="idformemailandphoneno">
@@ -84,7 +84,7 @@
                         <p>Input the amount of cards you wish to request for</p>
                     </div>
                     <div class="QOC pricing">
-                        <form>
+                        
                           <div class="QOCform-group">
                             <!-- <label for="price">Price</label> -->
                             <input type="text" class="QOCform-control1" name="price" value="700" disabled>
@@ -95,7 +95,7 @@
                             <input type="number" class="QOCform-control" name="quantity" value="">
                           </div>
                       
-                        </form>
+                        
                         <div class="text-right QOCtext total"></div>
                     </div>
                     <!-- <div class="QOCs">
@@ -160,30 +160,20 @@
                     <center>
                         <div class="templatediv" id="image">
                             <div class="templater">
+                            <?php
+
+                                $query = "SELECT * FROM template WHERE status='active';";
+                                $result = mysqli_query($link, $query);
+
+                                while ($row = mysqli_fetch_array($result)) {
+                            ?>
                                 <div class="template active">
-                                    <img src="images/template1.svg" alt="">
+                                    <img src="./../admin/templates/uploads/<?=$row['picture']?>" alt="<?=$row['picture']?>">
                                     <div class="scrollmenuInput1">
                                         <input type="radio" checked="checked" name="template" value="<?=$row['picture']?>">
                                     </div>
                                 </div>
-                                <div class="template">
-                                    <img src="images/template3.svg" alt="">
-                                    <div class="scrollmenuInput1">
-                                        <input type="radio" checked="checked" name="template" value="<?=$row['picture']?>">
-                                    </div>
-                                </div>
-                                <div class="template active">
-                                    <img src="images/template1.svg" alt="">
-                                    <div class="scrollmenuInput1">
-                                        <input type="radio" checked="checked" name="template" value="<?=$row['picture']?>">
-                                    </div>
-                                </div>
-                                <div class="template">
-                                    <img src="images/template3.svg" alt="">
-                                    <div class="scrollmenuInput1">
-                                        <input type="radio" checked="checked" name="template" value="<?=$row['picture']?>">
-                                    </div>
-                                </div>
+                            <?php } ?>
                                 <div class="navigation">
                                     <i class="fas fa-chevron-left prev-btn"></i>
                                     <i class="fas fa-chevron-right next-btn"></i>
