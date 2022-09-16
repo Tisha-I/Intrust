@@ -281,7 +281,7 @@
                         </div>
                     </div>
                 <div class="placerequestbtn">
-                    <button name="submit">PLACE REQUEST</button>
+                    <button type="submit" name="submit" value="submit">PLACE REQUEST</button>
                 </div>
             </form>
         </div>
