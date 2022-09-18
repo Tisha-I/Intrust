@@ -1,4 +1,4 @@
-<?php include("../admin/connection.php"); ?>
+<?php include("./../admin/connection.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,8 +22,7 @@
             </div>
             <nav class="idcardNav__Items">
                     <div class="idcardNav__Linkitems">
-                        <div class="idcardNav__Link">
-                            <a href="https://www.intrust.ng/">Home</a>
+                        <div class="idcardNav__Link">g/">Home</a>
                         </div>
                         <div class="idcardNav__Link">
                             <a href="./index.html">Our Process</a>
@@ -34,6 +33,7 @@
                         <div class="idcardNav__Link">
                             <a href="index.html#CUS">Contact Us</a>
                         </div>
+                            <a href="https://www.intrust.n
                 </nav>
             <div class="Navbar__Link Navbar__Link-toggle">
                 <div class="toggleicon">
