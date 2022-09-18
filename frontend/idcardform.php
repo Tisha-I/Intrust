@@ -84,7 +84,6 @@
                         <p>Input the amount of cards you wish to request for</p>
                     </div>
                     <div class="QOC pricing">
-                        <form>
                           <div class="QOCform-group">
                             <!-- <label for="price">Price</label> -->
                             <input type="text" class="QOCform-control1" name="price" value="700" disabled>
@@ -94,8 +93,6 @@
                             <label for="quantity">Quantity</label>
                             <input type="number" class="QOCform-control" name="quantity" value="">
                           </div>
-                      
-                        </form>
                         <div class="text-right QOCtext total"></div>
                     </div>
                     <!-- <div class="QOCs">
@@ -157,7 +154,49 @@
                             </select>
                         </div>
                     </div>
-                    <center>
+                    <div class="templatedisplay" id="image">
+                        <div class="templatetable">
+                            <div class="template">
+                                <img src="images/template3.svg" alt="">
+                                <div class="scrollmenuInput1">
+                                    <input type="radio" checked="checked" name="template" value="<?=$row['picture']?>">
+                                </div>
+                            </div>
+                            <div class="template active">
+                                <img src="images/template1.svg" alt="">
+                                <div class="scrollmenuInput1">
+                                    <input type="radio" checked="checked" name="template" value="<?=$row['picture']?>">
+                                </div>
+                            </div>
+                            <div class="template">
+                                <img src="images/template3.svg" alt="">
+                                <div class="scrollmenuInput1">
+                                    <input type="radio" checked="checked" name="template" value="<?=$row['picture']?>">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="templatetable">
+                            <div class="template">
+                                <img src="images/template3.svg" alt="">
+                                <div class="scrollmenuInput1">
+                                    <input type="radio" checked="checked" name="template" value="<?=$row['picture']?>">
+                                </div>
+                            </div>
+                            <div class="template active">
+                                <img src="images/template1.svg" alt="">
+                                <div class="scrollmenuInput1">
+                                    <input type="radio" checked="checked" name="template" value="<?=$row['picture']?>">
+                                </div>
+                            </div>
+                            <div class="template">
+                                <img src="images/template3.svg" alt="">
+                                <div class="scrollmenuInput1">
+                                    <input type="radio" checked="checked" name="template" value="<?=$row['picture']?>">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <center>
                         <div class="templatediv" id="image">
                             <div class="templater">
                                 <div class="template active">
@@ -190,7 +229,7 @@
                                 </div>
                             </div>
                         </div>
-                    </center>
+                    </center> -->
                 </div>
                     <div class="leg">
                         <div>
@@ -391,78 +430,78 @@
                     }
             }
         }
-        const templater = document.querySelector(".templater");
-    const nextBtn = document.querySelector(".next-btn");
-    const prevBtn = document.querySelector(".prev-btn");
-    const templates = document.querySelectorAll(".template");
-    const templateIcons = document.querySelectorAll(".template-icon");
-    const numberOftemplates = templates.length;
-    var templateNumber = 0;
+    //     const templater = document.querySelector(".templater");
+    // const nextBtn = document.querySelector(".next-btn");
+    // const prevBtn = document.querySelector(".prev-btn");
+    // const templates = document.querySelectorAll(".template");
+    // const templateIcons = document.querySelectorAll(".template-icon");
+    // const numberOftemplates = templates.length;
+    // var templateNumber = 0;
 
-    nextBtn.addEventListener("click", () => {
-      templates.forEach((template) => {
-        template.classList.remove("active");
-      });
-      templateIcons.forEach((templateIcon) => {
-        templateIcon.classList.remove("active");
-      });
+    // nextBtn.addEventListener("click", () => {
+    //   templates.forEach((template) => {
+    //     template.classList.remove("active");
+    //   });
+    //   templateIcons.forEach((templateIcon) => {
+    //     templateIcon.classList.remove("active");
+    //   });
 
-      templateNumber++;
+    //   templateNumber++;
 
-      if(templateNumber > (numberOftemplates - 1)){
-        templateNumber = 0;
-      }
+    //   if(templateNumber > (numberOftemplates - 1)){
+    //     templateNumber = 0;
+    //   }
 
-      templates[templateNumber].classList.add("active");
-      templateIcons[templateNumber].classList.add("active");
-    });
+    //   templates[templateNumber].classList.add("active");
+    //   templateIcons[templateNumber].classList.add("active");
+    // });
 
-    prevBtn.addEventListener("click", () => {
-      templates.forEach((template) => {
-        template.classList.remove("active");
-      });
-      templateIcons.forEach((templateIcon) => {
-        templateIcon.classList.remove("active");
-      });
+    // prevBtn.addEventListener("click", () => {
+    //   templates.forEach((template) => {
+    //     template.classList.remove("active");
+    //   });
+    //   templateIcons.forEach((templateIcon) => {
+    //     templateIcon.classList.remove("active");
+    //   });
 
-      templateNumber--;
+    //   templateNumber--;
 
-      if(templateNumber < 0){
-        templateNumber = numberOftemplates - 1;
-      }
+    //   if(templateNumber < 0){
+    //     templateNumber = numberOftemplates - 1;
+    //   }
 
-      templates[templateNumber].classList.add("active");
-      templateIcons[templateNumber].classList.add("active");
-    });
-    var playtemplater;
+    //   templates[templateNumber].classList.add("active");
+    //   templateIcons[templateNumber].classList.add("active");
+    // });
+    // var playtemplater;
 
-    var repeater = () => {
-      playtemplater = setInterval(function(){
-        templates.forEach((template) => {
-          template.classList.remove("active");
-        });
-        templateIcons.forEach((templateIcon) => {
-          templateIcon.classList.remove("active");
-        });
+    // var repeater = () => {
+    //   playtemplater = setInterval(function(){
+    //     templates.forEach((template) => {
+    //       template.classList.remove("active");
+    //     });
+    //     templateIcons.forEach((templateIcon) => {
+    //       templateIcon.classList.remove("active");
+    //     });
 
-        templateNumber++;
+    //     templateNumber++;
 
-        if(templateNumber > (numberOftemplates - 1)){
-          templateNumber = 0;
-        }
+    //     if(templateNumber > (numberOftemplates - 1)){
+    //       templateNumber = 0;
+    //     }
 
-        templates[templateNumber].classList.add("active");
-        templateIcons[templateNumber].classList.add("active");
-      }, 5000);
-    }
-    repeater();
-    templater.addEventListener("mouseover", () => {
-      clearInterval(playtemplater);
-    });
+    //     templates[templateNumber].classList.add("active");
+    //     templateIcons[templateNumber].classList.add("active");
+    //   }, 5000);
+    // }
+    // repeater();
+    // templater.addEventListener("mouseover", () => {
+    //   clearInterval(playtemplater);
+    // });
 
-    templater.addEventListener("mouseout", () => {
-      repeater();
-    });
+    // templater.addEventListener("mouseout", () => {
+    //   repeater();
+    // });
     const priceInput = document.querySelector('[name=price]');
                         const quantityInput = document.querySelector('[name=quantity]');
                         const total = document.querySelector('.total');

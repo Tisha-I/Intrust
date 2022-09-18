@@ -402,6 +402,21 @@
   flex-direction: row;
   justify-content: space-around;
 }
+.templatedisplay {
+  display: flex;
+  flex-direction: column;
+  display: none;
+}
+.templatetable {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-bottom: 25px;
+  text-align: center;
+}
+/* .templatetable img:hover {
+  
+} */
 .checkboxothers input {
   padding: 12px 0px;
   border: none;
@@ -660,5 +675,10 @@ margin: 0;
   }
   .scrollmenudiv {
     width: 50%;
+  }
+  .templatetable {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
   }
 }
