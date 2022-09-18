@@ -100,7 +100,7 @@
                                 </nav>
                             </div>
                             <div class="sb-sidenav-menu-heading">Contact Us</div>
-                            <a class="nav-link" href="contactus.php">
+                            <a class="nav-link" href="./contactus/contactus.php">
                                 <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
                                 Messages
                             </a>
