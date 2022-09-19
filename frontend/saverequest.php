@@ -46,7 +46,7 @@
                 $template = $new_img_name;
             }else {
                  $em = "You can't upload files of this type";
-                 header("Location: idcardform.php?error=$em");
+                 header("Location: idcardform.html?error=$em");
              }
         }
 
