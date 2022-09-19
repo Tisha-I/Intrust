@@ -97,6 +97,7 @@
                                 <thead>
                                     <tr>
                                         <th>Name</th>
+                                        <th>Company Name</th>
                                         <th>Email</th>
                                         <th>Phone</th>
                                         <th>Date</th>
@@ -113,6 +114,7 @@
                                 <tfoot>
                                     <tr>
                                         <th>Name</th>
+                                        <th>Company Name</th>
                                         <th>Email</th>
                                         <th>Phone</th>
                                         <th>Date</th>
@@ -131,12 +133,13 @@
                                         while ($row = mysqli_fetch_array($result)) {
                                     ?>
                                         <tr>
+                                            <td><?php echo $row['personname'] ?></td>
                                             <td><?php echo $row['name'] ?></td>
                                             <td><?php echo $row['email'] ?></td>
                                             <td><?php echo $row['phone'] ?></td>
                                             <td><?php echo $row['created_at'] ?></td>
                                             <td><?php echo $row['quantity'] ?></td>
-                                            <td><img width="200" src="uploads/<?=$row['design']?>"></td>
+                                            <td><img width="200" src="./templates/uploads/<?php echo $row['design'];?>"></td>
                                             <td><?php echo $row['frontcard'] ?></td>
                                             <td><?php echo $row['backcard'] ?></td>
                                             <td><?php echo $row['processed_by'] ?></td>
