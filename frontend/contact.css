@@ -111,8 +111,8 @@
 .processimg img {
     width: 100%;
     padding-left: 2%;
-    padding-top: 50px;
-    padding-bottom: 80px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 .processdiv  {
     text-align: center;
@@ -219,6 +219,7 @@ input[type=submit] {
 }
 .indexform2 p {
     margin: 0;
+    font-size: 14px;
 }
 .indexform1 a i {
     color: #FFBF30;
