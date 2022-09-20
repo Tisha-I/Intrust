@@ -23,7 +23,7 @@
             </div>
             <nav class="idcardNav__Items">
                     <div class="idcardNav__Linkitems">
-                        <div class="idcardNav__Link">g/">Home</a>
+                        <div class="idcardNav__Link"><a href="https://www.intrust.ng/">Home</a>
                         </div>
                         <div class="idcardNav__Link">
                             <a href="./index.html">Our Process</a>
@@ -34,7 +34,7 @@
                         <div class="idcardNav__Link">
                             <a href="index.html#CUS">Contact Us</a>
                         </div>
-                            <a href="https://www.intrust.n
+                            
                 </nav>
             <div class="Navbar__Link Navbar__Link-toggle">
                 <div class="toggleicon">
@@ -62,7 +62,7 @@
                     </div>
                     <div class="idcardNOO">
                         <label for="NOO">Name of Contact Person</label> <br>
-                        <input type="text" name="name" placeholder="Enter Your Name" required>
+                        <input type="text" name="personname" placeholder="Enter Your Name" required>
                     </div>
                     <div class="input-icons">
                         <div class="idformemailandphoneno">
@@ -163,7 +163,6 @@
                     <?php
                         $query = "SELECT * FROM template WHERE status='active';";
                         $result = mysqli_query($link, $query);
-                        // $pic = mysqli_query($conn, "SELECT * FROM `users`");
                         ?>
                         <div class="container">
                             <div class="row row-cols-3">

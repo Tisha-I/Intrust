@@ -36,7 +36,7 @@
             $count4++;
         }
 
-        $query = "SELECT *  FROM orders join company on orders.company_id=company.id;";
+        $query = "SELECT company.personname, company.name, company.email, company.phone,company.address, orders.id,orders.created_at, orders.quantity,orders.design, orders.frontcard,orders.backcard,orders.processed_by, orders.processed_at, orders.status  FROM orders join company on orders.company_id=company.id;";
         $result = mysqli_query($link, $query);
 
         include "header.php";
@@ -100,6 +100,7 @@
                                         <th>Company Name</th>
                                         <th>Email</th>
                                         <th>Phone</th>
+                                        <th>Address</th>
                                         <th>Date</th>
                                         <th>Quantity</th>
                                         <th>Design</th>
@@ -117,6 +118,7 @@
                                         <th>Company Name</th>
                                         <th>Email</th>
                                         <th>Phone</th>
+                                        <th>Address</th>
                                         <th>Date</th>
                                         <th>Quantity</th>
                                         <th>Design</th>
@@ -137,6 +139,7 @@
                                             <td><?php echo $row['name'] ?></td>
                                             <td><?php echo $row['email'] ?></td>
                                             <td><?php echo $row['phone'] ?></td>
+                                            <td><?php echo $row['address'] ?></td>
                                             <td><?php echo $row['created_at'] ?></td>
                                             <td><?php echo $row['quantity'] ?></td>
                                             <td><img width="200" src="./templates/uploads/<?php echo $row['design'];?>"></td>
@@ -145,7 +148,7 @@
                                             <td><?php echo $row['processed_by'] ?></td>
                                             <td><?php echo $row['processed_at'] ?></td>
                                             <td><?php echo $row['status'] ?></td>
-                                            <td><a href="update_order.php?id=<?php echo $row['id'];?>">Update</a></td>
+                                            <td><a href="./orders/update_order.php?id=<?php echo $row['id'];?>">Update</a></td>
                                         </tr>
                                     <?php } ?>
                                 </tbody>
