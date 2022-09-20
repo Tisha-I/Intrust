@@ -78,7 +78,6 @@
                     </div>
                     <div class="idformaddress">
                         <label for="Address">Address</label> <br>
-                        <!-- <input type="text" name="address" placeholder="Enter The Organisation's Address" required> -->
                         <textarea name="address" id="" placeholder="Enter The Organisation's Address" required></textarea>
                     </div>
                     <div class="quantityofcards">
@@ -98,52 +97,6 @@
                               </div>
                             <div class="QOCtext total"></div>
                         </div>
-                        <!-- <div class="QOCs">
-                            <label class="QOCcontainer">
-                                <div class="QOCsInput">
-                                    <div class="QOCInput">
-                                        <input type="radio" checked="checked" name="radio" value="1-10">
-                                        <span class="checkmark"></span>
-                                    </div> <br>
-                                    <div class="QOCps">
-                                        <p>1-10</p>
-                                    </div>
-                                </div>
-                            </label>
-                            <label class="QOCcontainer">
-                                <div class="QOCsInput">
-                                    <div class="QOCInput">
-                                        <input type="radio" name="radio" value="10-50">
-                                        <span class="checkmark"></span>
-                                    </div> <br>
-                                    <div class="QOCps">
-                                        <p>10-50</p>
-                                    </div>
-                                </div>
-                            </label>
-                            <label class="QOCcontainer">
-                                <div class="QOCsInput">
-                                    <div class="QOCInput">
-                                        <input type="radio" name="radio" value="50-200">
-                                        <span class="checkmark"></span>
-                                    </div> <br>
-                                    <div class="QOCps">
-                                        <p>50-200</p>
-                                    </div>
-                                </div>
-                            </label>
-                            <label class="QOCcontainer">
-                                <div class="QOCsInput">
-                                    <div class="QOCInput">
-                                        <input type="radio" name="radio" value="200+">
-                                        <span class="checkmark"></span>
-                                    </div> <br>
-                                    <div class="QOCps">
-                                        <p>200+</p>
-                                    </div>
-                                </div>
-                            </label>
-                        </div> -->
                     </div>
                     <div class="carddesign">
                         <div class="carddesignselct">
@@ -170,7 +123,7 @@
                                     while($row = mysqli_fetch_array($result)){
                                 ?>
                                 <div class="col">
-                                    <img src="./../admin/templates/uploads/<?=$row['picture']?>" alt="<?=$row['picture']?>">
+                                    <img src="http://admin.intrust.ng/templates/uploads/<?=$row['picture']?>" alt="<?=$row['picture']?>">
                                     <div class="scrollmenuInput1">
                                         <input type='radio' checked='checked' name='template' value="<?=$row['picture']?>">
                                     </div>
@@ -180,40 +133,6 @@
                         
                     </div>
                         </div>
-                        <!-- <center>
-                            <div class="templatediv" id="image">
-                                <div class="templater">
-                                    <div class="template active">
-                                        <img src="images/template1.svg" alt="">
-                                        <div class="scrollmenuInput1">
-                                            <input type="radio" checked="checked" name="template" value="<?=$row['picture']?>">
-                                        </div>
-                                    </div>
-                                    <div class="template">
-                                        <img src="images/template3.svg" alt="">
-                                        <div class="scrollmenuInput1">
-                                            <input type="radio" checked="checked" name="template" value="<?=$row['picture']?>">
-                                        </div>
-                                    </div>
-                                    <div class="template active">
-                                        <img src="images/template1.svg" alt="">
-                                        <div class="scrollmenuInput1">
-                                            <input type="radio" checked="checked" name="template" value="<?=$row['picture']?>">
-                                        </div>
-                                    </div>
-                                    <div class="template">
-                                        <img src="images/template3.svg" alt="">
-                                        <div class="scrollmenuInput1">
-                                            <input type="radio" checked="checked" name="template" value="<?=$row['picture']?>">
-                                        </div>
-                                    </div>
-                                    <div class="navigation">
-                                        <i class="fas fa-chevron-left prev-btn"></i>
-                                        <i class="fas fa-chevron-right next-btn"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </center> -->
                     </div>
                         <div class="leg">
                             <div>
@@ -415,78 +334,7 @@
                     }
             }
         }
-    //     const templater = document.querySelector(".templater");
-    // const nextBtn = document.querySelector(".next-btn");
-    // const prevBtn = document.querySelector(".prev-btn");
-    // const templates = document.querySelectorAll(".template");
-    // const templateIcons = document.querySelectorAll(".template-icon");
-    // const numberOftemplates = templates.length;
-    // var templateNumber = 0;
 
-    // nextBtn.addEventListener("click", () => {
-    //   templates.forEach((template) => {
-    //     template.classList.remove("active");
-    //   });
-    //   templateIcons.forEach((templateIcon) => {
-    //     templateIcon.classList.remove("active");
-    //   });
-
-    //   templateNumber++;
-
-    //   if(templateNumber > (numberOftemplates - 1)){
-    //     templateNumber = 0;
-    //   }
-
-    //   templates[templateNumber].classList.add("active");
-    //   templateIcons[templateNumber].classList.add("active");
-    // });
-
-    // prevBtn.addEventListener("click", () => {
-    //   templates.forEach((template) => {
-    //     template.classList.remove("active");
-    //   });
-    //   templateIcons.forEach((templateIcon) => {
-    //     templateIcon.classList.remove("active");
-    //   });
-
-    //   templateNumber--;
-
-    //   if(templateNumber < 0){
-    //     templateNumber = numberOftemplates - 1;
-    //   }
-
-    //   templates[templateNumber].classList.add("active");
-    //   templateIcons[templateNumber].classList.add("active");
-    // });
-    // var playtemplater;
-
-    // var repeater = () => {
-    //   playtemplater = setInterval(function(){
-    //     templates.forEach((template) => {
-    //       template.classList.remove("active");
-    //     });
-    //     templateIcons.forEach((templateIcon) => {
-    //       templateIcon.classList.remove("active");
-    //     });
-
-    //     templateNumber++;
-
-    //     if(templateNumber > (numberOftemplates - 1)){
-    //       templateNumber = 0;
-    //     }
-
-    //     templates[templateNumber].classList.add("active");
-    //     templateIcons[templateNumber].classList.add("active");
-    //   }, 5000);
-    // }
-    // repeater();
-    // templater.addEventListener("mouseover", () => {
-    //   clearInterval(playtemplater);
-    // });
-
-    // templater.addEventListener("mouseout", () => {
-    //   repeater();
-    // });
     const priceInput = document.querySelector('[name=price]');
                         const quantityInput = document.querySelector('[name=quantity]');
                         const total = document.querySelector('.total');
@@ -514,22 +362,3 @@
     </script>
 </body>
 </html>
-<!-- <div class="scrollmenudiv">
-    <div class="scrollmenu">
-        <?php
-
-            $query = "SELECT * FROM template WHERE status='active';";
-            $result = mysqli_query($link, $query);
-
-            while ($row = mysqli_fetch_array($result)) {
-        ?>
-        <div class="scrollmenuoption">
-            <img src="./../admin/templates/uploads/<?=$row['picture']?>" alt="<?=$row['picture']?>">
-            <div class="scrollmenuInput">
-                <input type="radio" checked="checked" name="template" value="<?=$row['picture']?>">
-            </div>
-        </div>
-        <?php } ?>
-        
-    </div>
-</div> -->

@@ -41,7 +41,7 @@
             $allowed_exs = array("jpg", "jpeg", "png", "svg"); 
             if (in_array($img_ex_lc, $allowed_exs)) {
                 $new_img_name = uniqid("IMG-", true).'.'.$img_ex_lc;
-                $img_upload_path = './../admin/templates/uploads/'.$new_img_name;
+                $img_upload_path = 'http://admin.intrust.ng/templates/uploads/'.$new_img_name;
                 move_uploaded_file($tmp_name, $img_upload_path);
                 $template = $new_img_name;
             }else {
@@ -56,13 +56,6 @@
    		$q1 = "select * from company where  id=(select max(id) from company)";
    		$r1 = mysqli_query($link, $q1);
    		$ro1 = mysqli_fetch_assoc($r1);
-        
-   		// $query2 = "INSERT INTO `idcard`(`template`, `frontcard`, `backcard`, `quantity`) VALUES ('$template','$front_card','$back_card','$quantity')";
-   		// $result2 = mysqli_query($link, $query2);
-     //    $idcard = mysqli_affected_rows($link);
-   		// $q2 = "select * from company where  id=(select max(id) from company)";
-   		// $r2 = mysqli_query($link, $q2);
-   		// $ro2 = mysqli_fetch_assoc($r2);
 
    		$date = date('d-m-y h:i:s');
    		$company_id = $ro1 ['id'];
