@@ -90,6 +90,9 @@
     border-radius: 5px;
     border: none;
 }
+.processdiv {
+    padding-bottom: 50px;
+}
 .processdiv h1{
     font-family: Poppins;
     font-size: 46px;
@@ -99,8 +102,8 @@
     font-size: 17px;
     color: #ADADB8;
     font-family: 'Open Sans';
-    padding-left: 20%;
-    padding-right: 20%;
+    /* padding-left: 20%;
+    padding-right: 20%; */
 }
 .processimg {
     box-sizing: border-box;
@@ -114,10 +117,10 @@
     padding-top: 10px;
     padding-bottom: 10px;
 }
-.processdiv  {
+/* .processdiv h1 {
     text-align: center;
     padding-top: 70px;
-}
+} */
 .processcontact {
     display: flex;
     flex-direction: row;
@@ -241,6 +244,134 @@ input[type=submit] {
 .bushours {
     padding-bottom: 40px;
 }
+#idreadmore {
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 150px;
+    font-family: Poppins;
+    text-align: justify;
+}
+#idreadmore h1 {
+    font-size: 46px;
+    font-weight: bold;
+    font-family: Poppins;
+    margin-bottom: 25px;
+}
+#idreadmore p {
+    list-style-type: none;
+}
+.id-readmore2 p {
+    color: #ADADB8;
+}
+.id-readmore1 p span{
+    font-weight: bold;
+}
+.id-readmore2 {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.id-readmore3 p {
+    color: #000000;
+}
+.id-readmore2 p span {
+    font-weight: bold;
+}
+.id-readmore3 h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.yellow-word {
+    color: #FFBF30;
+}
+.IDbenefits1 {
+    width: 252px; 
+    padding: 50px 25px;
+    box-shadow: 0px 0px 5px #374957;
+    border: none;
+    border-radius: 16px;
+    text-align: center;
+    margin-bottom: 90px;
+}
+.IDbenefits2 {
+    width: 252px; 
+    padding: 50px 25px;
+    box-shadow: 0px 0px 5px #374957;
+    border: none;
+    border-radius: 16px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.IDbenefits3 {
+    width: 252px; 
+    padding: 50px 25px;
+    box-shadow: 0px 0px 5px #374957;
+    border: none;
+    border-radius: 16px;
+    text-align: center;
+    margin-bottom: 99.55px;
+}
+.IDbenefits4 {
+    width: 252px; 
+    padding: 50px 25px;
+    box-shadow: 0px 0px 5px #374957;
+    border: none;
+    border-radius: 16px;
+    text-align: center;
+}
+.IDbenefits5 {
+    width: 252px; 
+    padding: 50px 25px;
+    box-shadow: 0px 0px 5px #374957;
+    border: none;
+    border-radius: 16px;
+    text-align: center;
+}
+.IDbenefits6 {
+    height: 244.01px;
+    width: 252px; 
+    padding: 50px 25px;
+    box-shadow: 0px 0px 5px #374957;
+    border: none;
+    border-radius: 16px;
+    text-align: center;
+}
+.ID-service-3-sect p {
+    font-size: 16px;
+    font-family: Poppins;
+    margin-top: 30px;
+    font-weight: bold;
+}
+.IDbenefitsleft {
+    display: flex;
+    flex-direction: column;
+}
+.IDbenefitsmiddle {
+    display: flex;
+    flex-direction: column;
+}
+.IDbenefitsright {
+    display: flex;
+    flex-direction: column;
+}
+.ID-service-3-sect {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 10%;
+}
+@media only screen and (max-width: 1128px){
+    .ID-service-3-sect {
+        text-align: center;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    #idreadmore {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
 @media only screen and (max-width: 768px) {
     .idcardNav__Linkitems {
         flex-direction: column;
@@ -315,5 +446,43 @@ input[type=submit] {
     }
     .processform {
         width: 100%;
+    }
+    .IDservice-3 {
+        text-align: center;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .ID-service-3-sect{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .IDbenefitsleft {
+        text-align: center;
+        align-self: center;
+        margin-bottom: 30px;
+    }
+    .IDbenefitsmiddle {
+        text-align: center;
+        align-self: center;
+        margin-bottom: 30px;
+    }
+    .IDbenefitsright {
+        text-align: center;
+        align-self: center;
+    }
+    .IDservice-3 {
+        width: 100%;
+        text-align: center;
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+    #idreadmore h1 {
+        font-size: 30px;
+    }
+    #idreadmore {
+        padding-left: 2%;
+        padding-right: 2%;
+        margin-top: 50px;
     }
 }
