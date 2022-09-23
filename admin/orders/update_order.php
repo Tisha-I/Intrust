@@ -1,12 +1,11 @@
 
 <?php 
- error_reporting(0);
 	session_start();
 	if(isset($_SESSION["login"])){
-		include("./connection.php");
+		include("./../connection.php");
 
-		$id1 = $_GET['id'];
-		$query = "SELECT orders.id, orders.created_at, orders.processed_by, orders.processed_at, company.name FROM `orders` join `company` on orders.company_id=company.id WHERE orders.id = '$id1';";
+		$id = $_GET['id'];
+		$query = "SELECT orders.id, orders.created_at, orders.processed_by, orders.processed_at, company.name FROM `orders` join `company` on orders.company_id=company.id WHERE orders.id = '$id';";
 
 		$result = mysqli_query($link, $query);
 		$row = mysqli_fetch_assoc($result);
@@ -20,7 +19,7 @@
 			$query = "UPDATE `orders` SET `processed_at`='$date',`processed_by`='$admin',`status`='$status' WHERE `id`='$id';";
 			$result = mysqli_query($link, $query);
 			if ($result) {
-				header("Location: home.php");
+				header("Location: ./../home.php");
 				echo "<div id='alert' class='alert alert-success' role='alert'> Updated successfully </div>";
 
 			}else{
@@ -88,6 +87,6 @@
 <?php 
     }else{
     	echo"You must login" ;
-    	echo "<a href='./index.php'>login</a>";
+    	echo "<a href='./../index.php'>login</a>";
 	}
 ?>
